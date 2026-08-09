@@ -3,11 +3,12 @@
 @theme {
   --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair);
-  
+
   /* Shiva Verse Color Palette */
   --color-shiva-black: #050505;
   --color-shiva-charcoal: #121212;
-  --color-shiva-blue: #3b82f6; /* mystical blue */
+  --color-shiva-blue: #3b82f6;
+  /* mystical blue */
   --color-shiva-blue-glow: #60a5fa;
   --color-shiva-silver: #9ca3af;
   --color-shiva-gold: #fbbf24;
@@ -27,7 +28,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
 }
 
@@ -35,13 +41,16 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--color-shiva-black);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--color-shiva-charcoal);
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-shiva-blue);
 }
@@ -51,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -65,6 +75,7 @@ input[type="range"]::-moz-range-thumb {
   border: none;
   cursor: pointer;
 }
+
 input[type="range"]::-moz-range-track {
   height: 6px;
   border-radius: 9999px;

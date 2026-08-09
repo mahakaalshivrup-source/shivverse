@@ -17,7 +17,7 @@ const navLinks = [
   { name: "Symbolism", href: "/#symbolism" },
   { name: "Stories", href: "/stories" },
   { name: "Mantras", href: "/mantras" },
-  { name: "Jyotirlingas", href: "/jyotirlingas" },
+  { name: "Maps", href: "/maps" },
 ];
 
 export default function Navbar() {
