@@ -1,0 +1,114 @@
+MAHA MRITYUNJAYA STOTRAM — Caption/Lyrics File
+===================================================
+
+INSTRUCTIONS: Paste the full lyrics/captions below this line.
+Each line will become one element in the lyrics[] array.
+Empty lines will create visual spacing in the teleprompter.
+
+--- PASTE LYRICS BELOW ---
+
+अपमृत्युहरं महामृत्युञ्जय स्तोत्रम्
+
+ॐ अस्य श्रीमहामृत्युञ्जयस्तोत्रमन्त्रस्य श्रीमार्कण्डेय ऋषिः अनुष्टुप् छन्दः 
+
+श्रीमृत्युञ्जयो देवता गौरी शक्तिः मम सर्वारिष्टसमस्तमृत्युशान्त्यर्थं सकलैश्वर्यप्राप्त्यर्थंच जपे विनियोगः ।
+
+|| अथ ध्यानम् ॥
+
+चन्द्रार्काग्निविलोचनं स्मितमुखं पद्मद्वयान्तः स्थितं
+
+मुद्रापाशमृगाक्षसत्रविलसत्पाणिं हिमांशुप्रभुम् ।
+
+कोटीन्दुप्रगलत्सुधाप्लुततनुं हारादिभूषोज्ज्वलं
+
+कान्तं विश्वविमोहनं पशुपतिं मॄत्युञ्जयं भावयेत् ।
+
+|| श्लोक ||
+
+ॐ रुद्रं पशुपतिं स्थाणुं नीलकण्ठमुमापतिम् । नमामि शिरसा देवं किं नो मृत्युः करिष्य़ति ॥१॥
+
+नीलकण्ठं कालमूर्तिं कालज्ञं कालनाशनम् । नमामि शिरसा देवं किं नो मृत्युः करिष्य़ति ॥२॥
+
+नीलकण्ठं विरूपाक्षं निर्मलं निलयप्रभम् । नमामि शिरसा देवं किं नो मृत्युः करिष्यति ॥३॥
+
+वामदेवं महादेवं लोकनाथं जगद्गुरुम् । नमामि शिरसा देवं किंनो मृत्युः करिष्यति ॥४॥
+
+देवदेवं जगन्नाथं देवेशं वृषभध्वजम् । नमामि शिरसा देवं किं नो मृत्युः करिष्यति ॥५॥
+
+त्र्यक्षं चतुर्भुजं शान्तं जटामकुटधारिणम् । नमामि शिरसा देवं किं नो मृत्युः करिष्यति ॥६॥
+
+भस्मोद्धूलितसर्वाङ्गं नागाभरणभूषितम् । नमामि शिरसा देवं किं नो मृत्युः करिष्यति ॥७॥
+
+अनन्तमव्ययं शान्तं अक्षमालाधरं हरम् । नमामि शिरसा देवं किं नो मृत्युः करिष्यति ॥८॥
+
+आनन्दं परमं नित्यं कैवल्यपददायिनम् । नमामि शिरसा देवं किं नो मृत्युः करिष्यति ॥९॥
+
+अर्द्धनारीश्वरं देवं पार्वतीप्राणनायकम् । नमामि शिरसा देवं किं नो मृत्युः करिष्यति ॥१०॥
+
+प्रलयस्थितिकर्त्तारमादिकर्त्तारमीश्वरम् । नमामि शिरसा देवं किं नो मृत्युः करिष्यति ॥११॥
+
+व्योमकेशं विरूपाक्षं चन्द्रार्द्धकृतशेखरम् । नमामि शिरसा देवं किं नो मृत्युः करिष्यति ॥१२॥
+
+गङ्गाधरं शशिधरं शङ्करं शूलपाणिनम् । नमामि शिरसा देवं किं नो मृत्युः करिष्यति ॥१३॥
+
+गङ्गाधरं महादेवं सर्वाभरणभूषितम् । नमामि शिरसा देवं किं नो मृत्युः करिष्यति ॥१४॥
+
+अनाधः परमानन्दं कैवल्यपदगामिनि । नमामि शिरसा देवं किंनो मृत्युः करिष्यति ॥१५॥
+
+स्वर्गापवर्गदातारं सृष्टिस्थितिविनाशकम् । नमामि शिरसा देवं किंनो मृत्युः करिष्यति ॥१६॥
+
+उत्पत्तिस्थितिसंहारं कर्तारमीश्वरं गुरुम् । नमामि शिरसा देवं किं नो मृत्युः करिष्यति ॥१७॥
+
+मार्कण्डेयकृतं स्तोत्रं यः पठेच्छिवसन्निधौ । तस्य मॄत्युभयं नास्ति नाग्निचौरभयं क्वचित् ॥१८॥
+
+शतावर्तं प्रकर्तव्यं सङ्कटे कष्टनाशनम् । शुचिर्भूत्वा पठेत्स्तोत्रं सर्वसिद्धिप्रदायकम् ॥१९॥
+
+मृत्युञ्जय महादेव त्राहि मां शरणागतम् । जन्ममृत्युजरारोगैः पीडितं कर्मबन्धनैः ॥२०॥
+
+तावतस्त्वद्गतप्राणस्त्वच्चित्तोऽहं सदा मृड । इति विज्ञाप्य देवेशं त्र्यंबकाख्यं मनुं जपेत् ॥२१॥
+
+नमः शिवाय साम्बाय हरये परमात्मने । प्रणतक्लेशनाशाय योगिनां पतये नमः ॥२२॥
+
+
+Introduction and Invocation 
+
+|| Om asya shrimahamrityunjayastotramantrasya shrimarkandeya rishih anushthup chandah Om. ||
+
+Of this Mahamrityunjaya Stotram, the sage is Markandeya, the meter is Anushtup.
+
+|| Shrimrityunjayo devata gauri shaktih mama sarvaaristasamastamrityushantyartham sakalaishvaryapraptyarthamcha jape viniyogah. || 
+
+The deity of this Mahamrityunjaya Stotram is Lord Mrityunjaya (Shiva), the energy is Gauri (Parvati), for the pacification of all dangers and attainment of all kinds of prosperity, this is the invocation for the chanting.
+
+This part sets the tone for the stotram, identifying its origin and purpose, invoking divine blessings for protection and prosperity, and establishing the authority of the sage who composed it and the meter in which it is structured.
+
+Dhyana (Meditation)
+
+Chandraarkaagnivilochanam smitamukham Padmadvayantah sthitam Mudraapashamrigakshasatravilasatpanim Himaamshuprabhum
+
+I meditate upon Lord Mrityunjaya, Whose eyes are like the sun, moon, and fire, Whose face is smiling, Who resides within the lotus of my heart, Whose hands shine with the noose, goad, deer, and axe, Who is radiant like the snow-capped mountains.
+
+Shlokas (Verses)
+
+I bow to Lord Rudra, the lord of animals, eternal, blue-throated, the consort of Uma. What can death do to us?
+Blue-throated, the form of time, the knower of time, the destroyer of time. What can death do to us?
+Blue-throated, with unusual eyes, pure, with the radiance of abode. What can death do to us?
+The left-handed god, the great god, the lord of the world, the preceptor of the universe. What can death do to us?
+The god of gods, the lord of the universe, the lord of gods, the flag-bearer. What can death do to us?
+Three-eyed, four-armed, calm, with matted hair. What can death do to us?
+Covered with ash, adorned with serpent ornaments. What can death do to us?
+Endless, eternal, peaceful, wearing a garland of beads. What can death do to us?
+Bliss, supreme, eternal, bestower of liberation. What can death do to us?
+Half woman, half god, the lord of Parvati's life. What can death do to us?
+The creator of destruction, the creator of the beginning. What can death do to us?
+Lord of the sky, unusual-eyed, with a crescent moon on his head. What can death do to us?
+Gangaadharam, Shashidharam, Shankaram, with a trident in his hand. What can death do to us?
+Gangaadharam, Mahadevam, adorned with all ornaments. What can death do to us?
+Anadi, supreme bliss, the one who leads to liberation. What can death do to us?
+The giver of heaven and liberation, the destroyer of creation, existence, and destruction. What can death do to us?
+Utpattisthitisamharam, the creator, the god, the guru. What can death do to us?
+Markandeya's hymn, whoever recites it in the presence of Shiva. There is no fear of death or the thief of fire anywhere.
+One hundred times should be done, destroyer of difficulties, destroyer of sorrows. After becoming pure, recite the hymn. It gives all accomplishments.
+Mahadeva, Mrityunjaya, save me, surrendered. Born with birth, death, old age, and disease, I am troubled by karma bonds.
+Till then, I am with you, I always praise you, Lord, Tryptakakham Manu.
+Salutation to Lord Shiva, Sambhaya, Paramatma. For the destroyer of the teacher's troubles, I bow to the yogis.

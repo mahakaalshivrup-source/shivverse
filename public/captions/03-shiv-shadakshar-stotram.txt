@@ -1,0 +1,47 @@
+SHIV SHADAKSHAR STOTRAM — Caption/Lyrics File
+==================================================
+
+INSTRUCTIONS: Paste the full lyrics/captions below this line.
+Each line will become one element in the lyrics[] array.
+Empty lines will create visual spacing in the teleprompter.
+
+--- PASTE LYRICS BELOW ---
+
+ॐकारं बिन्दुसंयुक्तं नित्यं ध्यायन्ति योगिनः।
+कामदं मोक्षदं चैव ॐकाराय नमो नमः॥१॥
+
+नमन्ति ऋषयो देवा नमन्त्यप्सरसां गणाः।
+नरा नमन्ति देवानां नकाराय नमो नमः॥२॥
+
+महादेवं महात्मानं महाध्यानं परायणम्।
+महापापहरं देवं मकाराय नमो नमः॥३॥
+
+शिवं शांतं जगन्नाथं लोकानुग्रहकारकम्।
+शिवमेकपदं नित्यं शिकाराय नमो नमः॥४॥
+
+वाहनं वृषभो यस्य वासुकिः कंठभूषणम्।
+वामे शक्तिधरं देवं वकाराय नमो नमः॥५॥
+
+यत्र यत्र स्थितो देवः सर्वव्यापी महेश्वरः।
+यो गुरु: सर्वदेवानां यकाराय नमो नमः॥६॥
+
+
+
+Omkaram Bindusamyuktam Nityam Dhyaayanti Yoginah Kaamadam Mokshadam Chaiva Omkaraaya Namo Namah
+
+Salutations to the Omkara, the sacred syllable 'Om' combined with the bindu (dot), which yogis meditate upon constantly. It grants desires and liberation.
+Namanti Rishayo Devaa Namantyapsarasaam Ganaah Naraa Namanti Devaanaam Nakaraaya Namo Namah
+
+Salutations to the syllable 'Na', to which sages, gods, groups of celestial beings, and humans bow down.
+Mahadevam Mahaatmaanam Mahaadhyaanam Paraayanam Mahaa Paapaharam Devam Makaraaya Namo Namah
+
+Salutations to the syllable 'Ma', representing the great Lord, the great soul, the ultimate object of meditation, and the one who removes great sins.
+Shivam Shaantam Jagannaatham Lokaanugrahakaarakam Shivameka Padam Nityam Shikaaraaya Namo Namah
+
+Salutations to the syllable 'Shi', representing the auspicious, peaceful Lord of the universe, the benefactor of the world, and the eternal, singular position.
+Vaahanam Vrishabho Yasya Vaasuki Kanthabhooshanam Vaame Shaktidharm Devam Vakaaraaya Namo Namah
+
+Salutations to the syllable 'Va', representing the Lord whose vehicle is the bull, who adorns the serpent Vasuki around his neck, and who holds the Shakti on his left side.
+Yatra Yatra Sthito Devah Sarvavyaapi Maheshwarah Yo Guruh Sarvadevaanaam Yakaaraaya Namo Namah
+
+Salutations to the syllable 'Ya', representing the Lord who is omnipresent, the great Lord Maheshwara, and the guru of all gods.

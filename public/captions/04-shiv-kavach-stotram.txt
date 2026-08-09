@@ -1,0 +1,313 @@
+SHIV KAVACH STOTRAM — Caption/Lyrics File
+==============================================
+
+INSTRUCTIONS: Paste the full lyrics/captions below this line.
+Each line will become one element in the lyrics[] array.
+Empty lines will create visual spacing in the teleprompter.
+
+--- PASTE LYRICS BELOW ---
+|| श्री शिवाय नमः ॥
+
+अस्य श्री शिवकवच-स्तोत्र-मन्त्रस्य
+
+ब्रह्मा ऋषिः,
+
+अनुष्टुप् छंदः,
+
+श्रीसदाशिवरुद्रो देवता,
+
+ह्रीं शक्तिः,
+
+रं कीलकम्,
+
+श्रीं ह्रीं क्लीं बीजम्,
+
+श्रीसदाशिवप्रीत्यर्थे शिवकवचस्तोत्रजपे विनियोगः
+
+|| अथ न्यासः ||
+
+ॐ नमो भगवते ज्वलज्ज्वालामालिने ॐ ह्रां सर्वशक्तिधाम्ने ईशानात्मने अंगुष्ठाभ्यां नमः ।
+
+ॐ नमो भगवते ज्वलज्ज्वालामालिने ॐ नं रिं नित्यतृप्तिधाम्ने तत्पुरुषात्मने तर्जनीभ्यां नमः ।
+
+ॐ नमो भगवते ज्वलज्ज्वालामालिने ॐ मं रुं अनादिशक्तिधाम्ने अघोरात्मने मध्यमाभ्यां नमः ।
+
+ॐ नमो भगवते ज्वलज्ज्वालामालिने ॐ शिं रैं स्वतंत्रशक्तिधाम्ने वामदेवात्मने अनामिकाभ्यां नमः ।
+
+ॐ नमो भगवते ज्वलज्ज्वालामालिने ॐ वां रौं अलुप्तशक्तिधाम्ने सद्योजातात्मने कनिष्ठिकाभ्यां नमः ।
+
+ॐ नमो भगवते ज्वलज्ज्वालामालिने ॐ यं रः अनादि शक्तिधाम्ने सर्वात्मने करतलकरपृष्ठाभ्यां नमः ।
+
+|| हृदयादि न्यासः ||
+
+ॐ नमो भगवते ज्वलज्ज्वालामालिने ॐ ह्रां सर्वशक्तिधाम्ने ईशानात्मने हृदयाय नमः  ।
+
+ॐ नमो भगवते ज्वलज्ज्वालामालिने ॐ नं रिं नित्यतृप्तिधाम्ने तत्पुरुषात्मने शिरसे स्वाहा ।
+
+ॐ नमो भगवते ज्वलज्ज्वालामालिने ॐ मं रुं अनादिशक्तिधाम्ने अघोरात्मने शिकायै वषट् ।
+
+ॐ नमो भगवते ज्वलज्ज्वालामालिने ॐ शिं रैं स्वतंत्रशक्तिधाम्ने वामदेवात्मने कवचाय हुम् ।
+
+ॐ नमो भगवते ज्वलज्ज्वालामालिने ॐ वां रौं अलुप्तशक्तिधाम्ने सद्योजातात्मने नेत्रत्रयाय वौषट् ।
+
+ॐ नमो भगवते ज्वलज्ज्वालामालिने ॐ यं रः अनादि शक्तिधाम्ने सर्वात्मने अस्त्राय फट् |
+
+॥अथ ध्यानम् ॥
+
+वज्रदंष्ट्रं त्रिनयनं कालकण्ठमरिंदमम् । सहस्रकरमत्युग्रं वन्दे शंभुमुमापतिम् ॥१॥
+
+अथापरं सर्वपुराणगुह्यं निःशेषपापौघहरं पवित्रम् । जयप्रदं सर्वविपत्प्रमोचनं वक्ष्यामि शैवं कवचं हिताय ते ॥२॥
+
+ऋषभ उवाच ॥नमस्कृत्वा महादेवं विश्वव्यापिनमीश्वरम् । वक्ष्ये शिवमयं वर्म सर्वरक्षाकरं नृणाम् ॥३॥
+
+शुचौ देशे समासीनो यथावत्कल्पितासनः । जितेन्द्रियो जितप्राणः चिन्तयेच्छिवमव्ययम् ॥४॥
+
+हृत्पुण्डरीकान्तरसन्निविष्टं स्वतेजसा व्याप्तनभोऽवकाशम् । अतीन्द्रियं सूक्ष्ममनन्तमाद्यं ध्यायेत्परानन्दमयं महेशम् ॥५॥
+
+ध्यानावधूताखिलकर्मबन्धश्चिरं चिदानन्दनिमग्नचेताः । षडक्षरन्याससमाहितात्मा शैवेन कुर्यात्कवचेन रक्षाम् ॥६॥
+
+मां पातु देवोऽखिलदेवतात्मा संसारकूपे पतितं गभीरे । तन्नाम दिव्यं वरमन्त्रमूलं धुनोतु मे सर्वमघं हृदिस्थम् ॥ ७॥
+
+सर्वत्र मां रक्षतु विश्वमूर्तिर्ज्योतिर्मयानन्द घनश्चिदात्मा । अणोरणीयानुरुशक्तिरेकः स ईश्वरः पातु भयादशेषात् ॥८॥
+
+यो भूस्वरूपेण बिभर्ति विश्वं पायात्स भूमेर्गिरिशोऽष्टमूर्तिः । योऽपांस्वरूपेण नृणां करोति सञ्जीवनं सोऽवतु मां जलेभ्यः ॥९॥
+
+कल्पावसाने भुवनानि दग्ध्वा सर्वाणि यो नृत्यति भूरिलीलः । स कालरुद्रोऽवतु मां दवाग्नेर्वात्यादिभीतेरखिलाच्च तापात् ॥१०॥
+
+प्रदीप्तविद्युत्कनकावभासो विद्यावराभीतिकुठार पाणिः । चतुर्मुखस्तत्पुरुषस्त्रिनेत्रः प्राच्यां स्थितो रक्षतु मामजस्रम् ॥११॥
+
+कुठारखेटांकुशपाशशूलकपालढक्काक्ष गुणान्दधानः । चतुर्मुखो नीलरुचिस्त्रिनेत्रः पायादघोरो दिशि दक्षिणस्याम् ॥१२॥
+
+कुन्देन्दु शंखस्फटिकावभासो वेदाक्षमालावरदाभयाङ्गः । त्र्यक्षश्चतुर्वक्त्र उरु प्रभावः सद्योऽधिजातोऽवतु मां प्रतीच्याम् ॥१३॥
+
+वराक्षमालाऽभयटङ्कहस्तः सरोजकिञ्जल्कसमानवर्णः । त्रिलोचनश्चारुचतुर्मुखो मां पायादुदीच्यां दिशि वामदेवः ॥१४॥
+
+वेदाभयेष्टाङ्कुशपाशढङ्क कपालढक्काक्ष्ररशूलपाणिः । सितद्युतिः पंचमुखोऽवतान्मामीशान ऊर्ध्वम् परमप्रकाशः ॥१५॥
+
+मूर्धानमव्यान्मम चन्द्रमौलिर्भालं ममाव्यादथ भालनेत्रः । नेत्रे ममाव्याज्जगनेत्रहारी नासां सदा रक्षतु विश्वनाथः ॥१६॥
+
+पायाच्छ्रुती मे श्रुतिगीतकीर्तिः कपोलमव्यात्सततं कपाली । वक्त्रम् सदा रक्षतु पंचवक्त्रो जिह्वां सदा रक्षतु वेदजिह्वः ॥१७॥
+
+कण्ठं गिरीशोऽवतु नीलकण्ठः पाणिद्वयं पातु पिनाकपाणिः । दोर्मूलमव्यान्मम धर्मबाहुर्वक्षःस्थलं दक्षमखान्तकोऽव्यात् ॥१८॥
+
+ममोदरं पातु गिरीन्द्रधन्वा मध्यं ममाव्यान्मदनान्तकारी । हेरंभतातो मम पातु नाभिं पायात्कटिं धूर्जटिरीश्वरो मे ॥ १९॥
+
+ऊरुद्वयं पातु कुबेरमित्रो जानुद्वयं मे जगदीश्वरोऽव्यात् । जंघायुगं पुङ्गवकेतुरव्यात् पादौ ममाव्यात् सुरवन्द्यपादः ॥२०॥
+
+महेश्वरः पातु दिनादियामे मां मध्ययामेऽवतु वामदेवः । त्रिलोचनः पातु तृतीययामे वृषध्वजः पातु दिनान्त्ययामे ॥२१॥
+
+पायान्निशादौ शशिशेखरो मां गंगाधरो रक्षतु मां निशीथे । गौरीपतिः पातु निशावसाने मृत्युञ्जयो रक्षतु सर्वकालम् ॥ २२॥
+
+अन्तःस्थितं रक्षतु शङ्करो मां स्थाणुः सदा पातु बहिः स्थितं माम् । तदन्तरे पातु पतिः पशूनां सदाशिवो रक्षतु मां समन्तात् ॥२३॥
+
+तिष्ठन्तमव्याद्भुवनैकनाथः पायात्व्रजन्तं प्रमथाधिनाथः । वेदान्त वेद्योऽवतु मां निषण्णं मामव्ययः पातु शिवः शयानम् ॥२४॥
+
+मार्गेषु मां रक्षतु नीलकण्ठः शैलादिदुर्गेषु पुरत्रयारिः । अरण्यवासादिमहाप्रवासे पायान्मृगव्याध उदारशक्तिः ॥२५॥
+
+कल्पान्तकालोग्र पटुप्रकोपस्फुटाट्टहासोच्चलिताण्डकोशः । घोरारिसेनार्णवदुर्निवार महाभयाद्रक्षतु वीरभद्रः ॥२६॥
+
+पत्यश्वमातङ्गघटावरूथसहस्र लक्षायुत कोटिभीषणम् । अक्षौहिणीनां शतमाततायिनां छिन्द्यान्मृडो घोरकुठारधारया ॥२७॥
+
+निहन्तु दस्यून्प्रलयानलार्चिर्ज्वलत्त्रिशूलं त्रिपुरान्तकस्य । शार्दूलसिंहर्क्षवृकादिहिंस्रान् सन्त्रासयत्वीशधनुः पिनाकः ॥२८॥
+
+दुःस्वप्न दुःशकुन दुर्गति दौर्मनस्य दुर्भिक्ष दुर्व्यसन दुःसह दुर्यशांसि। उत्पात ताप विषभीतिमसद्ग्रहार्तिम्व्याधींश्च नाशयतु मे जगतामधीशः ॥२९॥
+
+ॐ नमो भगवते सदाशिवाय सकलतत्त्वात्मकाय सर्वमन्त्रस्वरूपाय
+
+सर्वयन्त्राधिष्ठिताय सर्वतन्त्रस्वरूपाय सर्वतत्त्वविदूराय ब्रह्मरुद्रावतारिणे
+
+नीलकण्ठाय पार्वतीमनोहरप्रियाय सोमसूर्याग्निलोचनाय भस्मोद्धूलितविग्रहाय
+
+महामणिमुकुटधारणाय माणिक्यभूषणाय स्रुष्टिस्थितिप्रळयकालरौद्रावताराय
+
+दक्षाध्वरध्वंसकाय महाकालमेदनाय मूलाधारैकनिलयाय तत्त्वातीताय
+
+गङ्गाधराय सर्वदेवाधिदेवाय षडाश्रयाय वेदान्तसाराय
+
+त्रिवर्गसाधनायानन्तकोटिब्रह्माण्डनायकायानन्त वासुकि तक्षक कार्कोटक
+
+शंख कुलिक पद्म महापद्मेत्यष्ट महानागकुलभूषणाय प्रणवस्वरूपाय
+
+चिदाकाशायाकाशादिस्वरूपाय ग्रहनक्षत्रमालिने सकलाय कळङ्करहिताय
+
+सकललोकैककर्त्रे सकललोकैकभर्त्रे सकललोकैक संहर्त्रे सकललोकैकगुरवे
+
+सकललोकैकसाक्षिणे सकलनिगमगुह्याय सकलवेदान्तपारगाय सकललोकैकवरप्रदाय
+
+सकललोकैकशङ्कराय शशाङ्कशेखराय शाश्वतनिजावासाय निराभासाय
+
+निरामयाय निर्मलाय निर्लोभाय निर्मदाय निश्चिन्ताय निरहङ्काराय निरङ्कुशाय
+
+निष्कळङ्काय निर्गुणाय निष्कामाय निरुपप्लवाय निरवद्याय निरन्तराय निष्कारणाय
+
+निरातङ्काय निष्प्रपञ्चाय निःसंगाय निर्द्वन्द्वाय निराधाराय नीरागाय निष्क्रोधाय
+
+निर्मलाय निष्पापाय निर्भयाय निर्विकल्पाय निर्भेदाय निष्क्रियाय निस्तुलाय निःसंशयाय
+
+निरञ्जनाय निरुपमविभवाय नित्यशुद्धबुद्धपरिपूर्णसच्चिदानन्दाद्वयाय परमशान्तस्वरूपाय
+
+तेजोरूपाय तेजोमयाय जय जय रुद्र महारौद्र महाभद्रावतार महाभैरव कालभैरव
+
+कल्पान्तभैरव कपालमालाधर खट्वांग खड्ग चर्म पाशांकुश डमरुक शूल चाप
+
+बाण गदा शक्ति भिण्डिपाल तोमर मुसल मुद्गर पाश परिघ भुशुण्डि शतघ्नि चक्रायुध
+
+भीषणकर सहस्रमुख दंष्ट्राकराळवदन विकटाट्टहास विस्फारित ब्रह्माण्डमण्डल
+
+नागेन्द्रकुण्डल नागेन्द्रहार नागेन्द्रवलय नागेन्द्रचर्मधर मृत्युञ्जय त्र्यंबक त्रिपुरान्तक
+
+विश्वरूप विरूपाक्ष विश्वेश्वर वृषभवाहन विषविभूषण विश्वतोमुख सर्वतोमुख रक्ष
+
+रक्ष मां ज्वल ज्वल महामृत्युमपमृत्युभयं नाशय नाशय  चोरभयमुत्सादयोत्सादय
+
+विषसर्पभयं शमय शमय चोरान्मारय मारय मम शत्रूनुच्चाटयोच्चाटय त्रिशूलेन
+
+विदारय विदारय कुठारेण भिन्धि भिन्धि खड्गेन छिन्धि छिन्धि खट्वाङ्गेन विपोथय विपोथय
+
+सुसलेन निष्पेषय निष्पेषय बाणैः सन्ताडय सन्ताडय रक्षांसि भीषय भीषय
+
+शेषभूतानि विद्रावय विद्रावय कूष्माण्ड वेताळ मारीच ब्रह्मराक्षसगणान् सन्त्रासय
+
+सन्त्रासय ममाभयं कुरु कुरु वित्रस्तं मामाश्वासयाश्वासय नरकमहाभयान्मामुद्धारयोद्धारय
+
+अमृतकटाक्ष वीक्षणेन माम् सञ्जीवय सञ्जीवय क्षुतृड्भ्यां मामाप्याययाप्यायय दुःखातुरं
+
+मामानन्दयानन्दय शिवकवचेन मामाच्छादयाच्छादय मृत्युञ्जय त्र्यंबक सदाशिव नमस्ते नमस्ते ।
+
+|| ऋषभ उवाच ॥
+
+इत्येतत्कवचं शैवं वरदं व्याहृतं मया ।सर्वबाधा प्रशमनं रहस्यं सर्वदेहिनाम् ॥ ३०॥
+
+यः सदा धारयेन्मर्त्यः शैवं कवचमुत्तमम्।न तस्य जायते क्वापि भयं शंभोरनुग्रहात् ॥३१॥
+
+क्षीणायुः प्राप्तमॄत्युर्वा महारोगहतोऽपि वा ।सद्यः सुखमवाप्नोति दीर्घमायुश्च विन्दति ॥ ३२॥
+
+सर्वदारिद्रशमनं सौमंगल्यविवर्धनम् ।यो धत्ते कवचं शैवं स देवैरपि पूज्यते ॥ ३३॥
+
+महापातकसंघातैर्मुच्यते चोपपातकैः ।देहान्ते मुक्तिमाप्नोति शिववर्मानुभावतः ॥३४॥
+
+त्वमपि श्रद्धया वत्स शैवं कवचसुत्तमम् ।धारयस्व मया दत्तं सद्यः श्रेयो ह्यवाप्स्यसि ॥ ३५॥
+
+सूत उवाच ॥इत्युक्त्वा ऋषभो योगी तस्मै पार्थिवसूनवे ।ददौ शंखं महारावं खड्गं चारिनिषूदनम् ॥३६॥
+
+पुनश्च भस्म संमन्त्र्य तदङ्गं परितोऽस्पृशत् ।गजानां षट्सहस्रस्य त्रिगुणस्य बलं ददौ ॥३७॥
+
+भस्मप्रभावात्संप्राप्त बलैश्वर्य धृति स्मृतिः ।स राजपुत्रः शुशुभे शरदर्क इव श्रिया॥३८॥
+
+तमाह प्राञ्जलिं भूयः स योगी नृपनन्दनम् ।एष खड्गो मया दत्तस्तपोमन्त्रानुभावितः ॥३९॥
+
+शितधारमिमं खड्गं यस्मै दर्शयसे स्फुटम् ।स सद्यो म्रियते शत्रुः साक्षान्मृत्युरपि स्वयम् ॥४०॥
+
+अस्य शंखस्य निर्ह्रादं ये शृण्वन्ति तवाहिताः ।ते मूर्च्छिताः पतिष्यन्ति न्यस्तशस्त्रा विचेतनाः ॥४१॥
+
+खड्गशङ्खाविमौ दिव्यौ परमन्यौ विनाशिनौ ।आत्मसैन्य स्वपक्षाणां शौर्यतेजोविवर्धनौ ॥४२॥
+
+एतयोश्च प्रभावेण शैवेन कवचेन च ।द्विषट्सहस्रनागानां बलेन महतापि च ॥ ४३॥
+
+भस्म धारणसामर्थ्याच्छत्रुसैन्यं विजेष्यसि ।प्राप्त सिंहासनं पित्र्यं गोप्तासि पृथिवीमिमाम् ॥४४॥
+
+इति भद्रायुषं सम्यगनुशास्य समातृकम् ।ताभ्यां संपूजितः सोऽथ योगी स्वैरगतिर्ययौ ॥४५॥
+
+इति श्रीस्कन्दपुराणे ब्रह्मोत्तरखण्डे शिवकवचस्तोत्रं संपूर्णम् ॥
+
+
+
+|| Salutations to Lord Shiva ||
+
+For the sacred hymn of the Shivakavacha Stotram:
+
+The sage is Brahma,
+The meter is Anushtup,
+The deity is Sadashiva Rudra,
+The power is Hreem,
+The pin is Ram,
+The seed syllables are Shreem, Hreem, and Kleem,
+For the pleasure of Sadashiva, the recitation of the Shivakavacha Stotram is performed.
+|| Nyasa (Placement of the mantra on the body) ||
+
+Om Namo Bhagavate Jvalajvalamaline Om Hraam Sarvashaktidhamne Ishanatmane Angushthabhyaam Namah.
+
+"Salutations to the blazing one, the abode of all powers, Ishana form of Shiva, I bow with the thumbs."
+Om Namo Bhagavate Jvalajvalamaline Om Nam Rim Nityatruptidhamne Tatpurushatmane Tarjanibhyaam Namah.
+
+"Salutations to the blazing one, the abode of eternal satisfaction, Tatpurusha form of Shiva, I bow with the index fingers."
+Om Namo Bhagavate Jvalajvalamaline Om Mam Rum Anadi Shaktidhamne Aghoratmane Madhyamabhyaam Namah.
+
+"Salutations to the blazing one, the abode of primordial power, Aghora form of Shiva, I bow with the middle fingers."
+Om Namo Bhagavate Jvalajvalamaline Om Shrim Raim Svatantrashaktidhamne Vamadevatmane Anamikabhyaam Namah.
+
+"Salutations to the blazing one, the abode of independent power, Vamadeva form of Shiva, I bow with the ring fingers."
+Om Namo Bhagavate Jvalajvalamaline Om Vam Raum Aluptashaktidhamne Sadyajatmane Kanishtikabhyaam Namah.
+
+"Salutations to the blazing one, the abode of unbroken power, Sadyojata form of Shiva, I bow with the little fingers."
+Om Namo Bhagavate Jvalajvalamaline Om Yam Rah Anadi Shaktidhamne Sarvatmane Karatalakaraprishthabhyaam Namah.
+
+"Salutations to the blazing one, the abode of primordial power, the universal form of Shiva, I bow with the palms and back of the hands."
+ 
+
+|| Hridayadi Nyasa (Heart placement of the mantra) ||
+
+Om Namo Bhagavate Jvalajvalamaline Om Hraam Sarvashaktidhamne Ishanatmane Hridayaya Namah.
+
+"Salutations to the blazing one, the abode of all powers, Ishana form of Shiva, I bow to the heart."
+Om Namo Bhagavate Jvalajvalamaline Om Nam Rim Nityatruptidhamne Tatpurushatmane Shirase Svaha.
+
+"Salutations to the blazing one, the abode of eternal satisfaction, Tatpurusha form of Shiva, I bow to the head."
+Om Namo Bhagavate Jvalajvalamaline Om Mam Rum Anadi Shaktidhamne Aghoratmane Shikayai Vashat.
+
+"Salutations to the blazing one, the abode of primordial power, Aghora form of Shiva, I bow to the crown."
+Om Namo Bhagavate Jvalajvalamaline Om Shrim Raim Svatantrashaktidhamne Vamadevatmane Kavachaya Hum.
+
+"Salutations to the blazing one, the abode of independent power, Vamadeva form of Shiva, I bow to the armor."
+Om Namo Bhagavate Jvalajvalamaline Om Vam Raum Aluptashaktidhamne Sadyajatmane Netra-trayaya Vaushat.
+
+"Salutations to the blazing one, the abode of unbroken power, Sadyojata form of Shiva, I bow to the three eyes."
+Om Namo Bhagavate Jvalajvalamaline Om Yam Rah Anadi Shaktidhamne Sarvatmane Astraya Phat.
+
+"Salutations to the blazing one, the abode of primordial power, the universal form of Shiva, I bow to the weapon."
+ 
+
+|| Meditation ||
+
+Vajradanshtram Trinayanam Kalakanthamarindamam, Sahasrakaramatyugram Vande Shambhumumapatim.
+
+"I meditate on Shiva, with teeth like a thunderbolt, three-eyed, blue-throated, destroyer of enemies, thousand-armed, and extremely fierce, the consort of Uma."
+Athaparam Sarvapuranaguhyam Nihsheshapapaughaharam Pavitray. Jayapradam Sarvavipatpramochanam Vakshyami Shaivam Kavacham Hitaya Te.
+
+"Now I will reveal the most secret of all scriptures, removing all sins, purifying, granting victory, removing all misfortunes, the Shaiva armor for your benefit."
+Rishabha Uvacha: Namaskritva Mahadevam Vishvavyapinameshvaram, Vakshye Shivamayam Varmam Sarvarakshakaram Nrinam.
+
+"Rishabha said: After bowing to Mahadeva, the omnipresent Lord, I will tell you the Shiva armor that protects all humans."
+Shuchau Deshe Samasinao Yathavat Kalpitasanah, Jitendriyo Jitapranah Chintayechchhivamavyayam.
+
+"Sitting in a clean place, on a proper seat, having controlled the senses and breath, one should meditate on the eternal Shiva."
+Hritpundarikantarasannivishtam Svatejasa Vyaptanabhoavakasham, Atindriyam Sukshmam Anantamadyam Dhyaayetparanandamayam Mahesham.
+
+"Meditate on the supreme Mahesh who is seated in the heart lotus, pervading the sky with his radiance, beyond the senses, subtle, infinite, the original being, and full of supreme bliss."
+Dhyanavadhutakhilakarmabandhashchiram Chidanandanimagnachetah, Shadaksharanyasasamahitatma Shaivena Kuryatkavachena Raksham.
+
+"Meditating and freeing oneself from all karmic bonds, immersing the mind in bliss consciousness, establishing the six-letter mantra, one should protect oneself with the Shiva armor."
+Mam Patu Devoakhiladevatatma Samsarakoope Patitam Gabheere, Tannama Divyam Varamantamulam Dhunotu Me Sarvamaghham Hrdistham.
+
+"May the Lord, the soul of all gods, protect me, fallen into the deep well of the world. May his divine name, the supreme mantra root, destroy all my sins in the heart."
+Sarvatra Mam Rakshatu Vishvamurtirjyotirmayananda Ghanashchidatma, Anoraniyanurushaktirekah Sa Ishvarah Patu Bhayadasheshat.
+
+"May the universal form, the embodiment of light and bliss, the consciousness soul, the smaller than the smallest, the one powerful Lord, protect me from all fears."
+Yo Bhoosvarupena Bibharati Vishvam Payatsabhoomergirishoshtamurtih, Yoapamsvarupena Nrnaam Karoti Sanjeevanam Sovatu Mam Jalebhyah.
+
+"May the Lord, who sustains the world in the form of the earth, who has the eight forms, who grants life to humans in the form of water, protect me from water dangers."
+Kalpavasane Bhuvanani Dagdhva Sarvani Yo Nrityati Bhoorileelah, Sa Kalarudroavatu Mam Davagnervaatyadibheeterakhilachcha Taapat.
+
+"May the Kalarudra, who dances playfully after burning all worlds at the end of the kalpa, protect me from wildfires, storms, and all kinds of heat."
+Pradeeptavidyutkanakavabhaso Vidyavarabhitikutharapaani, Chaturmukhastatpurushastrinetrah Praachyam Sthito Rakshatu Mamajasram.
+
+"May the Tatpurusha form, with a lightning-like golden radiance, holding the weapons of knowledge, blessings, and axe, with four faces and three eyes, protect me constantly from the east."
+Kutharakhetankushapaashashoolakapaladaakkakshagunandadhaana, Chaturmukho Neelaruchistrinetrah Payadaghoro Dishi Dakshinasyam.
+
+"May the Aghora form, with a blue radiance, holding an axe, shield, hook, noose, trident, skull, drum, and bow, with four faces and three eyes, protect me from the south."
+Kundendu Shankha Sphatikavabhaso Vedakshamalaavaradaabhayaangah, Tryakshashchaturvaktra Uru Prabhavah Sadyodijatoavatu Mam Prateechyam.
+
+"May the Sadyojata form, with a moon-like white radiance, holding a conch, crystal, rosary, and showing the gestures of blessings and fearlessness, with three eyes and four faces, protect me from the west."
+Varakshamalaabhayathankahastah Sarojakanthah Suravrushah, Mahavibhutirbhagavantryakshah Praticha Maam Rakshatu Neelakanthah.
+
+"May the Nilakantha form, with a blue neck, holding a rosary, lotus, and the gestures of blessings and fearlessness, the one with a bull as his vehicle, with great powers and three eyes, protect me."

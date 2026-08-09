@@ -1,0 +1,169 @@
+SHIVSTUTI — Caption/Lyrics File
+====================================
+
+INSTRUCTIONS: Paste the full lyrics/captions below this line.
+Each line will become one element in the lyrics[] array.
+Empty lines will create visual spacing in the teleprompter.
+
+--- PASTE LYRICS BELOW ---
+
+श्रीशिवस्तुति
+
+कैलासराणा शिवचंद्रमौळी, फणींद्र माथां मुकुटी झळाळी,
+कारुण्यसिंधू भवदुःखहारी, तुजवीण शंभो मज कोण तारी ॥ १ ॥
+
+रवींदु दावानल पूर्ण भाळी, स्वतेज नेत्रीं तिमिरौघ जाळी,
+ब्रह्मांडधीशा मदनांतकारी, तुजवीण शंभो मज कोण तारी ॥ २ ॥
+
+जटा विभूति उटि चंदनाची, कपालमाला प्रित गौतमीची,
+पंचानना विश्वनिवांतकारी, तुजवीण शंभो मज कोण तारी ॥ ३ ॥
+
+वैराग्ययोगी शिव शूलपाणी, सदा समाधी निजबोधवाणी,
+उमानिवासा त्रिपुरांतकारी, तुजवीण शंभो मज कोण तारी ॥ ४ ॥
+
+उदार मेरु पति शैलजेचा, श्रीविश्वनाथ म्हणती सुरांचा,
+दयानिधीचा गजचर्मधारी, तुजवीण शंभो मज कोण तारी ॥ ५ ॥
+
+ब्रह्मादि वंदी अमरादिनाथ, भुजंगमाला धरि सोमकांत,
+गंगा शिरीं दोष महा विदारी, तुजवीण शंभो मज कोण तारी ॥ ६ ॥
+
+कर्पूरगौरी गिरिजा विराजे, हळाहळें कंठ निळाचि साजे,
+दारिद्र्यदुःखे स्मरणें निवारी, तुजवीण शंभो मज कोण तारी ॥ ७ ॥
+
+स्मशानक्रीडा करितां सुखावे, तो देव चूडामणि कोण आहे,
+उदासमूर्ती जटाभस्मधारी, तुजवीण शंभो मज कोण तारी ॥ ८ ॥
+
+भूतादिनाथ अरि अंतकाचा, तो स्वामी माझा ध्वज शांभवाचा
+राजा महेश बहुबाहुधारी, तुजवीण शंभो मज कोण तारी ॥ ९ ॥
+
+नंदी हराचा हर नंदिकेश, श्रीविश्वनाथ म्हणती सुरेश,
+सदाशिव व्यापक तापहारी, तुजवीण शंभो मज कोण तारी ॥ १० ॥
+
+भयानक भीम विक्राळ नग्न, लीलाविनोदें करि काम भग्न,
+तो रुद्र विश्वंभर दक्ष मारी, तुजवीण शंभो मज कोण तारी ॥ ११ ॥
+
+इच्छा हराची जग हे विशाळ, पाळी रची तो करि ब्रह्मगोळ,
+उमापति भैरव विघ्नहारी, तुजवीण शंभो मज कोण तारी ॥ १२ ॥
+
+भागीरथीतीर सदा पवित्र, जेथें असे तारक ब्रह्ममंत्र,
+विश्वेश विश्वंभर त्रिनेत्रधारी, तुजवीण शंभो मज कोण तारी ॥ १३ ॥
+
+प्रयाग वेणी सकळा हराच्या, पादारविंदी वाहाती हरीच्या,
+मंदाकिनी मंगल मोक्षकारी, तुजवीण शंभो मज कोण तारी ॥ १४ ॥
+
+कीर्ती हराची स्तुति बोलवेना, कैवल्यदाता मनुजा कळेना,
+एकाग्रनाथ विष अंगिकारी, तुजवीण शंभो मज कोण तारी ॥ १५ ॥
+
+सर्वांतरी व्यापक जो नियंता, तो प्राणलिंगाजवळी महंता,
+अंकी उमा ते गिरिरुपधारी, तुजवीण शंभो मज कोण तारी ॥ १६ ॥
+
+सदा तपस्वी असे कामधेनू, सदा सतेज शशिकोटिभानू ,
+गौरीपती जो सदा भस्मधारी, तुजवीण शंभो मज कोण तारी ॥ १७ ॥
+
+कर्पूरगौर स्मरल्या विसांवा, चिंता हरी जो भजकां सदैवा,
+अंती स्वहीत सुवना विचारी, तुजवीण शंभो मज कोण तारी ॥ १८ ॥
+
+विरामकाळीं विकळ शरीर, उदास चित्तीं न धरीच धीर,
+चिंतामणी चिंतनें चित्तहारी, तुजवीण शंभो मज कोण तारी ॥ १९ ॥
+
+सुखावसाने सकळ सुखाची, दुःखावसाने टळती जगाचीं,
+देहावसाने धरणी थरारी, तुजवीण शंभो मज कोण तारी ॥ २० ॥
+
+अनुहात शब्द गगनी न माय, त्याने निनादें भव शून्य होय,
+कथा निजांगे करुणा कुमारी, तुजवीण शंभो मज कोण तारी ॥ २१ ॥
+
+शांति स्वलीला वदनीं विलासे, ब्रह्मांडगोळी असुनी न दिसे,
+भिल्ली भवानी शिव ब्रह्मचारी, तुजवीण शंभो मज कोण तारी ॥ २२ ॥
+
+पीतांबरे मंडित नाभि ज्याची, शोभा जडीत वरि किंकिणीची,
+श्रीदेवदत्त दुरितांतकारी, तुजवीण शंभो मज कोण तारी, ॥ २३ ॥
+
+जिवाशिवांची जडली समाधी, विटला प्रपंची तुटली उपाधी,
+शुद्धस्वरें गर्जति वेद चारी, तुजवीण शंभो मज कोण तारी, ॥ २४ ॥
+
+निधानकुंभ भरला अभंग, पाहा निजांगें शिव ज्योतिर्लिंग,
+गंभीर धीर सुर चक्रधारी, तुजवीण शंभो मज कोण तारी ॥ २५ ॥
+
+मंदार बिल्वें बकुलें सुवासी, माला पवित्र वहा शंकरासी,
+काशीपुरी भैरव विश्व तारी, तुजवीण शंभो मज कोण तारी ॥ २६ ॥
+
+जाई जुई चंपक पुष्पजाती, शोभे गळां मालतिमाळ हातीं,
+प्रताप सूर्यशरचापधारी, तुजवीण शंभो मज कोण तारी ॥ २७ ॥
+
+अलक्ष्यमुद्रा श्रवणीं प्रकाशे, संपूर्ण शोभा वदनीं विकसे,
+नेई सुपंथे भवपैलतीरीं, तुजवीण शंभो मज कोण तारी ॥ २८ ॥
+
+नागेशनामा सकळा जिव्हाळा, मना जपें रे शिवमंत्रमाळा,
+पंचाक्षरी घ्यान गुहाविहारीं, तुजवीण शंभो मज कोण तारी ॥ २९ ॥
+
+एकांति ये रे गुरुराज स्वामीं, चैतन्यरुपीं शिवसौख्य नामीं,
+शिणलों दयाळा बहुसाल भारी, तुजवीण शंभो मज कोण तारी ॥ ३० ॥
+
+शास्त्राभ्यास नको श्रुति पढुं नको तीर्थासि जाऊं नको,
+योगाभ्यास नको व्रतें मख नको तीव्रें तपें तीं नको,
+काळाचे भय मानसीं धरुं नको दुष्टांस शंकूं नको,
+ज्याचीया स्मरणें पतीत तरती तो शंभु सोडू नको ॥ ३१ ॥
+
+॥ इति श्रीशिवस्तुति ॥
+
+
+
+O Lord Shiva, who resides on Mount Kailasa, adorned with the crescent moon on His head, with a shining crown and serpent on His head. O ocean of compassion, remover of the sorrows of existence, O Shambhu, who else but You can save me?
+
+Whose forehead contains the sun, moon, and fire, with eyes that can burn the darkness with their radiance. O ruler of the universe, conqueror of desires, O Shambhu, who else but You can save me?
+
+With sacred ashes and sandalwood paste smeared on His matted hair, adorned with a garland of skulls, and beloved of the river Ganga. The five-faced one, who provides peace to the world, O Shambhu, who else but You can save me?
+
+The ascetic Lord Shiva, wielder of the trident, always in deep meditation and the embodiment of self-knowledge. The abode of Uma, destroyer of Tripura, O Shambhu, who else but You can save me?
+
+O gracious Lord, consort of Shailaja (Parvati), known as Vishwanatha by the gods. The compassionate one, clad in elephant hide, O Shambhu, who else but You can save me?
+
+Worshipped by Brahma and other immortal beings, adorned with a garland of serpents and the moon. The one who carries the Ganga on His head, dispelling all great sins, O Shambhu, who else but You can save me?
+
+With Gauri (Parvati) seated beside Him, shining like camphor. His blue neck adorned by the poison Halahala. He removes poverty and suffering by mere remembrance, O Shambhu, who else but You can save me?
+
+Who finds joy in the cremation ground, O crown jewel among gods, who is like You? With an austere form, adorned with ashes and matted hair, O Shambhu, who else but You can save me?
+
+O Lord of ghosts and spirits, destroyer of enemies. My Lord, bearer of the Shambhu banner, the mighty king, known as Mahesh, with many arms, O Shambhu, who else but You can save me?
+
+O Nandi's lord, the destroyer of Nandi, known as Vishwanatha by the gods. The ever-auspicious, omnipresent, remover of all suffering, O Shambhu, who else but You can save me?
+
+Terrifying and formidable, fierce and naked. With playful sports, He destroys desires. He is Rudra, the sustainer of the universe, who killed Daksha, O Shambhu, who else but You can save me?
+
+The will of Shiva is vast as the world. He protects and creates with His Brahma-like essence. The consort of Uma, who defeats obstacles, O Shambhu, who else but You can save me?
+
+By the holy river Bhagirathi, always pure, where the Taraka Brahma mantra resides. Lord of the universe, bearer of three eyes, O Shambhu, who else but You can save me?
+
+In Prayag and Veni, where all the offerings go to Shiva's feet, with the sacred Mandakini river bringing liberation, O Shambhu, who else but You can save me?
+
+Praising Shiva’s glory, the great giver of liberation. Humans do not understand, focusing on their own good. Who else but You, O Shambhu, can save me?
+
+Omnipresent, guiding all, O great one near the Prana Lingam. With Uma on His shoulder, in the form of the mountain, O Shambhu, who else but You can save me?
+
+Always an ascetic, like the wish-fulfilling cow. Always radiant like countless moons and suns. The husband of Gauri, always covered in sacred ash, O Shambhu, who else but You can save me?
+
+Thinking of the fair Gauri, who brings peace, removing all worries for devotees. In the end, He is the well-wisher, thinking of His devotees' good. O Shambhu, who else but You can save me?
+
+In the final moments, with a feeble body and an unsettled mind, unable to find peace, thinking of the wish-fulfilling jewel, remembering with pure thoughts, O Shambhu, who else but You can save me?
+
+At the end of happiness, all joys of the world vanish. At the end of suffering, all troubles disappear. At the end of life, the earth shakes, O Shambhu, who else but You can save me?
+
+In the subtle sound of the ether, beyond illusion, the void of existence becomes clear. Telling the story of compassion and grace, O Shambhu, who else but You can save me?
+
+With peaceful playfulness on His face, the entire universe resides within Him yet remains unseen. The ascetic of Bhilavani, O Shiva, who practices celibacy, O Shambhu, who else but You can save me?
+
+With a waist adorned with a yellow cloth, shining with a girdle of bells. Lord of all the gods, who destroys evil, O Shambhu, who else but You can save me?
+
+In deep meditation, where the mind is absorbed in Shiva's consciousness, transcending worldly pain, O Shambhu, who else but You can save me?
+
+With offerings of Mandara and Bilva leaves, pure flowers, and a garland of sacred beads. The supreme ascetic, who liberates the world, O Shambhu, who else but You can save me?
+
+With a garland of jasmine and other fragrant flowers, a shining chain in His hands. The mighty one, who holds the bow and arrows of the sun, O Shambhu, who else but You can save me?
+
+The subtle mudra, shining in the ears, His face glowing with a smile. Guiding the way to liberation, O Shambhu, who else but You can save me?
+
+Chanting the holy name of Nagesha with devotion, repeating the mantra of Shiva. The five-syllable mantra, residing in the cave of the heart, O Shambhu, who else but You can save me?
+
+In solitude, O master and Lord, with consciousness in the form of divine bliss. Tired and weary from the long journey, O compassionate one, who else but You can save me?
+
+No need for study or reading scriptures, no need to visit holy places. No need for rigorous yoga or penance, no need for severe austerities. Fear not the time of death, do not doubt the wicked. Remembering Him, even the fallen are saved. Do not forsake Shambhu, for who else but He can save you?

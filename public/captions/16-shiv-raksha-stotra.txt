@@ -1,0 +1,78 @@
+SHIV RAKSHA STOTRA — Caption/Lyrics File
+=============================================
+
+INSTRUCTIONS: Paste the full lyrics/captions below this line.
+Each line will become one element in the lyrics[] array.
+Empty lines will create visual spacing in the teleprompter.
+
+--- PASTE LYRICS BELOW ---
+
+अस्य श्री शिवरक्षास्तोत्रमन्त्रस्य याज्ञवल्क्य ऋषिः । श्री सदाशिवो देवता । अनुष्टुप् छन्दः । श्री सदाशिवप्रीत्यर्थं शिवरक्षास्तोत्रजपे विनियोगः ॥
+
+चरितं देवदेवस्य महादेवस्य पावनम् ।
+अपारं परमोदारं चतुर्वर्गस्य साधनम् ॥ १ ॥
+
+गौरीविनायकोपेतं पञ्चवक्त्रं त्रिनेत्रकम् ।
+शिवं ध्यात्वा दशभुजं शिवरक्षां पठेन्नरः ॥ २ ॥
+
+गङ्गाधरः शिरः पातु फालमर्धेन्दुशेखरः ।
+नयने मदनध्वंसी कर्णौ सर्पविभूषणः ॥ ३ ॥
+
+घ्राणं पातु पुरारातिः मुखं पातु जगत्पतिः ।
+जिह्वां वागीश्वरः पातु कन्धरां शितिकन्धरः ॥ ४ ॥
+
+श्रीकण्ठः पातु मे कण्ठं स्कन्धौ विश्वधुरन्धरः ।
+भुजौ भूभारसंहर्ता करौ पातु पिनाकधृक् ॥ ५ ॥
+
+हृदयं शङ्करः पातु जठरं गिरिजापतिः ।
+नाभिं मृत्युञ्जयः पातु कटिं व्याघ्राजिनाम्बरः ॥ ६ ॥
+
+सक्थिनी पातु दीनार्तशरणागतवत्सलः ।
+ऊरू महेश्वरः पातु जानुनी जगदीश्वरः ॥ ७ ॥
+
+जङ्घे पातु जगत्कर्ता गुल्फौ पातु गणाधिपः ।
+चरणौ करुणासिन्धुः सर्वाङ्गानि सदाशिवः ॥ ८ ॥
+
+एतां शिवबलोपेतां रक्षां यः सुकृती पठेत् ।
+स भुक्त्वा सकलान् कामान् शिवसायुज्यमाप्नुयात् ॥ ९ ॥
+
+ग्रहभूतपिशाचाद्याः त्रैलोक्ये विचरन्ति ये ।
+दूरादाशु पलायन्ते शिवनामाभिरक्षणात् ॥ १० ॥
+
+अभयङ्करनामेदं कवचं पार्वतीपतेः ।
+भक्त्या बिभर्ति यः कण्ठे तस्य वश्यं जगत्त्रयम् ॥ ११ ॥
+
+इमां नारायणः स्वप्ने शिवरक्षां यथाऽदिशत् ।
+प्रातरुत्थाय योगीन्द्रो याज्ञवल्क्यः तथाऽलिखत् ॥ १२ ॥
+
+इति श्रीयाज्ञवल्क्यप्रोक्तं शिवरक्षास्तोत्रम् ।
+
+Meaning:
+For the recitation of the Shiva Raksha Stotram, the sage (Rishi) is Yajnavalkya, the deity is Lord Sadashiva, and the meter (Chandas) is Anushtubh. It is used for the pleasure of Lord Sadashiva.
+
+Verse 1 : The story of the God of gods, the great Lord Shiva, is sacred. It is endless, supremely generous, and the means to achieve the four goals of life (Dharma, Artha, Kama, Moksha).
+
+Verse 2 : Meditating on Lord Shiva, accompanied by Gauri and Ganesha, with five faces and three eyes, with ten arms, one should recite the Shiva Raksha (protection) stotra.
+
+Verse 3 : May the bearer of the Ganga (Gangaadhara) protect my head; may the one who wears the crescent moon (Phalardhendu) protect my forehead. May the destroyer of Kama (Madana Dhwamsi) protect my eyes; may the one adorned with serpents (Sarpavibhushana) protect my ears.
+
+Verse 4 : May the enemy of Tripura (Puraarati) protect my nose; may the Lord of the world (Jagatpati) protect my mouth. May the lord of speech (Vaagishwara) protect my tongue; may the blue-throated one (Shitikanthara) protect my neck.
+
+Verse 5 : May Lord Shrikanta protect my throat; may the bearer of the burden of the universe (Vishwadhurandhara) protect my shoulders. May the one who removes the burden of the earth (Bhūbhārasamharata) protect my arms; may the wielder of the Pinaka bow (Pinakadhrik) protect my hands.
+
+Verse 6 : May Shankara protect my heart; may the husband of Girija (Girijapati) protect my stomach. May the conqueror of death (Mrityunjaya) protect my navel; may the one who wears the tiger skin (Vyaghrājināmbar) protect my waist.
+
+Verse 7 : May the protector of the afflicted and the refuge of the distressed (Dinarta Sharanagatavatsala) protect my thighs; may Maheshwara protect my knees. May the Lord of the world (Jagadishwara) protect my shins.
+
+Verse 8 : May the creator of the universe (Jagatkarata) protect my ankles; may the leader of the Ganas (Ganadhipa) protect my feet. May the ocean of compassion (Karunasindhu) protect all my limbs; may Lord Sadashiva protect my entire body.
+
+Verse 9 : Whoever recites this Shiva Raksha stotra, imbued with the power of Shiva, with devotion, will enjoy all desires and ultimately attain union with Shiva.
+
+Verse 10 : The planets, ghosts, demons, and others who roam in the three worlds will flee far away due to the protection provided by the names of Shiva.
+
+Verse 11 : This Kavacham (armor) of Lord Parvati’s consort, which has the name “Abhayankara,” should be worn around the neck with devotion, and the three worlds will be under the control of the wearer.
+
+Verse 12 : As directed by Lord Narayana in a dream, the great yogi Yajnavalkya wrote down this Shiva Raksha early in the morning.
+
+Conclusion
+Thus ends the Shiva Raksha Stotram as spoken by the sage Yajnavalkya.

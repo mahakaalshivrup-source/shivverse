@@ -1,0 +1,47 @@
+LINGASHTAKAM — Caption/Lyrics File
+=======================================
+
+INSTRUCTIONS: Paste the full lyrics/captions below this line.
+Each line will become one element in the lyrics[] array.
+Empty lines will create visual spacing in the teleprompter.
+
+--- PASTE LYRICS BELOW ---
+
+ब्रह्ममुरारिसुरार्चितलिङ्गं निर्मलभासितशोभितलिङ्गम् । जन्मजदुःखविनाशकलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥१॥
+
+देवमुनिप्रवरार्चितलिङ्गं कामदहं करुणाकरलिङ्गम् । रावणदर्पविनाशनलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥२॥
+
+सर्वसुगन्धिसुलेपितलिङ्गं बुद्धिविवर्धनकारणलिङ्गम् । सिद्धसुरासुरवन्दितलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥३॥
+
+कनकमहामणिभूषितलिङ्गं फणिपतिवेष्टितशोभितलिङ्गम् । दक्षसुयज्ञविनाशनलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥४॥
+
+कुङ्कुमचन्दनलेपितलिङ्गं पङ्कजहारसुशोभितलिङ्गम् । सञ्चितपापविनाशनलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥५॥
+
+देवगणार्चितसेवितलिङ्गं भावैर्भक्तिभिरेव च लिङ्गम् । दिनकरकोटिप्रभाकरलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥६॥
+
+अष्टदलोपरिवेष्टितलिङ्गं सर्वसमुद्भवकारणलिङ्गम् । अष्टदरिद्रविनाशितलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥७॥
+
+सुरगुरुसुरवरपूजितलिङ्गं सुरवनपुष्पसदार्चितलिङ्गम् । परात्परं परमात्मकलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥८॥
+
+लिङ्गाष्टकमिदं पुण्यं यः पठेत् शिवसन्निधौ। शिवलोकमवाप्नोति शिवेन सह मोदते॥
+
+Meaning
+
+Verse 1 : I bow to the eternal Shiva Lingam, which is worshipped by Brahma, Vishnu, and other gods, which shines with pure radiance, and which destroys the sorrows of birth.
+
+Verse 2 : I bow to the eternal Shiva Lingam, which is worshipped by the best of gods and sages, which burns desires, is full of compassion, and which destroyed the pride of Ravana.
+
+Verse 3 : I bow to the eternal Shiva Lingam, which is anointed with fragrant perfumes, which enhances intelligence, and which is worshipped by gods, siddhas, and demons alike.
+
+Verse 4 : I bow to the eternal Shiva Lingam, which is adorned with gold and precious gems, which is beautified by serpents, and which destroyed Daksha's sacrificial ritual.
+
+Verse 5 : I bow to the eternal Shiva Lingam, which is smeared with sandalwood paste and saffron, which is adorned with garlands of lotuses, and which destroys accumulated sins.
+
+Verse 6 : I bow to the eternal Shiva Lingam, which is worshipped and served by groups of gods, which is worshipped with devotion and reverence, and which radiates with the brilliance of millions of suns.
+
+Verse 7 : I bow to the eternal Shiva Lingam, which is surrounded by eight petals, which is the cause of all creation, and which destroys the eight forms of poverty.
+
+Verse 8 : I bow to the eternal Shiva Lingam, which is worshipped by the greatest of gods, which is always adorned with heavenly flowers, and which is the Supreme Being, the Supreme Soul.
+
+Phalashruti (Benefit of Reciting the Lingashtakam)
+Whoever recites this holy Lingashtakam in the presence of Lord Shiva will attain Shiva's abode and rejoice with Shiva.
