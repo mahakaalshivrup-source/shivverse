@@ -92,7 +92,7 @@ export default function AIChatBot() {
   };
 
   return (
-    <>
+    <div className="fixed right-6 bottom-[140px] z-[9999]">
       {/* ═══════════════════════════════════════════════
           FLOATING ACTION BUTTON
           ═══════════════════════════════════════════════ */}
@@ -104,14 +104,14 @@ export default function AIChatBot() {
             exit={{ scale: 0, opacity: 0 }}
             transition={{ type: "spring", stiffness: 260, damping: 20 }}
             onClick={() => setIsOpen(true)}
-            className="fixed bottom-[130px] md:bottom-6 right-6 z-50 flex items-center gap-3 group cursor-pointer"
+            className="absolute bottom-0 right-0 flex items-center gap-3 group cursor-pointer"
           >
             {/* Label */}
             <motion.span
               initial={{ opacity: 0, x: 10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
-              className="bg-white/10 backdrop-blur-md border border-white/20 text-white/90 text-sm font-medium px-4 py-2 rounded-full shadow-lg hidden sm:block"
+              className="bg-white/10 backdrop-blur-md border border-white/20 text-white/90 text-sm font-medium px-4 py-2 rounded-full shadow-lg hidden sm:block whitespace-nowrap"
             >
               Ask Me
             </motion.span>
@@ -159,7 +159,7 @@ export default function AIChatBot() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 40, scale: 0.9 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
-            className="fixed bottom-[130px] md:bottom-6 right-6 w-[340px] md:w-96 h-[520px] z-50 flex flex-col rounded-2xl overflow-hidden bg-[#0a0a0a]/95 backdrop-blur-xl border border-white/10 shadow-[0_0_40px_rgba(0,75,122,0.3)]"
+            className="absolute bottom-0 right-0 w-[340px] md:w-96 h-[520px] flex flex-col rounded-2xl overflow-hidden bg-[#0a0a0a]/95 backdrop-blur-xl border border-white/10 shadow-[0_0_40px_rgba(0,75,122,0.3)] origin-bottom-right"
           >
             {}
             <div className="flex items-center justify-between px-5 py-4 border-b border-white/10 bg-gradient-to-r from-[#004B7A]/20 to-transparent">
@@ -314,6 +314,6 @@ export default function AIChatBot() {
           </motion.div>
         )}
       </AnimatePresence>
-    </>
+    </div>
   );
 }

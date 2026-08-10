@@ -9,14 +9,13 @@ export default function SymbolismSection() {
       id="symbolism"
       className="relative w-full min-h-screen overflow-hidden flex flex-col items-center justify-center bg-black py-16"
     >
-      {/* Background Video (z-0) */}
       <video
+        src="/New folder/landing2vidoe.webm"
         autoPlay
         loop
         muted
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none opacity-60 scale-105"
-        src="/New folder/landing2vidoe.webm"
       />
 
       {/* Gradient Blending Overlay (z-10) */}
