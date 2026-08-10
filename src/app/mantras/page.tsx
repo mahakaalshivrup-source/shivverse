@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import MantrasGrid from "@/components/MantrasGrid";
 import Teleprompter from "@/components/Teleprompter";
+import { useAudio } from "@/context/AudioProvider";
 import type { Mantra } from "@/data/mantrasData";
 
 // ═══════════════════════════════════════════════════
@@ -12,6 +13,14 @@ import type { Mantra } from "@/data/mantrasData";
 export default function MantrasPage() {
   const [activeView, setActiveView] = useState<"grid" | "player">("grid");
   const [, setSelectedMantra] = useState<Mantra | null>(null);
+  const { currentTrack } = useAudio();
+
+  // If the player is closed globally (currentTrack becomes null), return to grid
+  useEffect(() => {
+    if (!currentTrack && activeView === "player") {
+      setActiveView("grid");
+    }
+  }, [currentTrack, activeView]);
 
   const handleSelectMantra = (mantra: Mantra) => {
     setSelectedMantra(mantra);

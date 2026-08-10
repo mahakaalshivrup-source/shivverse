@@ -154,6 +154,15 @@ export default function AudioProvider({ children }: { children: ReactNode }) {
     if (audioRef.current) audioRef.current.volume = volume;
   }, [volume]);
 
+  // ───── Close player ─────
+  const closePlayer = useCallback(() => {
+    setCurrentTrack(null);
+    setIsPlaying(false);
+    if (audioRef.current) {
+      audioRef.current.pause();
+    }
+  }, []);
+
   return (
     <AudioContext.Provider
       value={{
@@ -170,6 +179,7 @@ export default function AudioProvider({ children }: { children: ReactNode }) {
         setVolume,
         playNext,
         playPrev,
+        closePlayer,
         audioRef,
       }}
     >
