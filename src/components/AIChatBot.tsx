@@ -92,7 +92,7 @@ export default function AIChatBot() {
   };
 
   return (
-    <div className="fixed right-6 bottom-[140px] z-[9999]">
+    <div className="fixed right-6 bottom-[220px] md:bottom-[120px] z-[9999]">
       {/* ═══════════════════════════════════════════════
           FLOATING ACTION BUTTON
           ═══════════════════════════════════════════════ */}

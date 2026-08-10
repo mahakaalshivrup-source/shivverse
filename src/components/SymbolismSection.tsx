@@ -9,13 +9,22 @@ export default function SymbolismSection() {
       id="symbolism"
       className="relative w-full min-h-screen overflow-hidden flex flex-col items-center justify-center bg-black py-16"
     >
-      <video
-        src="/New folder/landing2vidoe.webm"
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none opacity-60 scale-105"
+      {/* Bulletproof iOS Autoplay Video Wrapper */}
+      <div
+        className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-60 scale-105"
+        dangerouslySetInnerHTML={{
+          __html: `
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              style="width: 100%; height: 100%; object-fit: cover; border: none; outline: none;"
+            >
+              <source src="/New folder/landing2vidoe.webm" type="video/webm" />
+            </video>
+          `
+        }}
       />
 
       {/* Gradient Blending Overlay (z-10) */}
