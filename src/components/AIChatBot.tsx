@@ -104,7 +104,7 @@ export default function AIChatBot() {
             exit={{ scale: 0, opacity: 0 }}
             transition={{ type: "spring", stiffness: 260, damping: 20 }}
             onClick={() => setIsOpen(true)}
-            className="fixed bottom-28 right-6 z-50 flex items-center gap-3 group cursor-pointer"
+            className="fixed bottom-28 md:bottom-6 right-6 z-50 flex items-center gap-3 group cursor-pointer"
           >
             {/* Label */}
             <motion.span
@@ -159,7 +159,7 @@ export default function AIChatBot() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 40, scale: 0.9 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
-            className="fixed bottom-28 right-6 w-[340px] md:w-96 h-[520px] z-50 flex flex-col rounded-2xl overflow-hidden bg-[#0a0a0a]/95 backdrop-blur-xl border border-white/10 shadow-[0_0_40px_rgba(0,75,122,0.3)]"
+            className="fixed bottom-28 md:bottom-6 right-6 w-[340px] md:w-96 h-[520px] z-50 flex flex-col rounded-2xl overflow-hidden bg-[#0a0a0a]/95 backdrop-blur-xl border border-white/10 shadow-[0_0_40px_rgba(0,75,122,0.3)]"
           >
             {}
             <div className="flex items-center justify-between px-5 py-4 border-b border-white/10 bg-gradient-to-r from-[#004B7A]/20 to-transparent">

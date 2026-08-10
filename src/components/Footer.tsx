@@ -29,6 +29,16 @@ export default function Footer() {
   const [isSubscribed, setIsSubscribed] = useState(false);
   const pathname = usePathname();
 
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // If it's a hash link for the about page, let standard Next/Link handle it
+    if (href.includes('#')) return; 
+
+    if (pathname === href) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault(); // Prepare for backend wiring
     if (!email) return;
@@ -125,25 +135,17 @@ export default function Footer() {
               About Us
             </h4>
             <ul>
-              {aboutLinks.map((link) => {
-                const isActive = pathname === link.href;
-                return (
-                  <li key={link.name}>
-                    <Link
-                      href={link.href}
-                      onClick={(e) => {
-                        if (isActive && !link.href.includes('#')) {
-                          e.preventDefault();
-                          window.scrollTo({ top: 0, behavior: 'smooth' });
-                        }
-                      }}
-                      className="text-base text-white/70 hover:text-white hover:translate-x-2 hover:underline hover:underline-offset-4 decoration-white/50 transition-all duration-300 block mb-5"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                );
-              })}
+              {aboutLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    onClick={(e) => handleLinkClick(e, link.href)}
+                    className="text-base text-white/70 hover:text-white hover:translate-x-2 hover:underline hover:underline-offset-4 decoration-white/50 transition-all duration-300 block mb-5"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -153,25 +155,17 @@ export default function Footer() {
               Shiva Exploration
             </h4>
             <ul>
-              {shivaExplorationLinks.map((link) => {
-                const isActive = pathname === link.href;
-                return (
-                  <li key={link.name}>
-                    <Link
-                      href={link.href}
-                      onClick={(e) => {
-                        if (isActive && !link.href.includes('#')) {
-                          e.preventDefault();
-                          window.scrollTo({ top: 0, behavior: 'smooth' });
-                        }
-                      }}
-                      className="text-base text-white/70 hover:text-white hover:translate-x-2 hover:underline hover:underline-offset-4 decoration-white/50 transition-all duration-300 block mb-5"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                );
-              })}
+              {shivaExplorationLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    onClick={(e) => handleLinkClick(e, link.href)}
+                    className="text-base text-white/70 hover:text-white hover:translate-x-2 hover:underline hover:underline-offset-4 decoration-white/50 transition-all duration-300 block mb-5"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
