@@ -75,11 +75,13 @@ export default function ShivaInteractiveMap() {
               <div className="relative flex items-center justify-center w-8 h-8 cursor-pointer">
                 <AnimatePresence>
                   <motion.div
+                    key="pulse-ring"
                     animate={{ scale: [1, 1.8, 1], opacity: [0.6, 0, 0.6] }}
                     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                     className="absolute w-6 h-6 bg-blue-500 rounded-full"
                   />
                   <motion.div 
+                    key="dot-center"
                     whileHover={{ scale: 1.5 }}
                     className="w-2.5 h-2.5 bg-white rounded-full relative z-10 shadow-[0_0_12px_3px_rgba(59,130,246,0.9)] transition-transform duration-300" 
                   />

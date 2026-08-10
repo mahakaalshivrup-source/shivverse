@@ -34,7 +34,7 @@ interface TripResponse {
   fastest: { details: string; searchQuery: string };
 }
 
-/* ─── Groq (primary) ─── */
+
 
 async function callGroq(systemPrompt: string): Promise<TripResponse> {
   const res = await fetch(GROQ_URL, {
@@ -70,7 +70,7 @@ async function callGroq(systemPrompt: string): Promise<TripResponse> {
   return JSON.parse(cleaned);
 }
 
-/* ─── Gemini (fallback) ─── */
+
 
 async function callGemini(systemPrompt: string): Promise<TripResponse> {
   const res = await fetch(`${GEMINI_URL}?key=${GEMINI_API_KEY}`, {
@@ -101,7 +101,7 @@ async function callGemini(systemPrompt: string): Promise<TripResponse> {
   return JSON.parse(rawText);
 }
 
-/* ─── Route handler ─── */
+
 
 export async function POST(req: NextRequest) {
   if (!GROQ_API_KEY && !GEMINI_API_KEY) {

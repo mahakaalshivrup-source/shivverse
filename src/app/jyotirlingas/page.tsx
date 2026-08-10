@@ -11,6 +11,7 @@ import { MapPin, Navigation } from "lucide-react";
 import jyotirlingaData from "@/data/jyotirlingaData";
 import type { JyotirlingaLocation } from "@/data/jyotirlingaData";
 import AITripModal from "@/components/AITripModal";
+import Image from "next/image";
 
 /* ─── Per-card component with its own IntersectionObserver ─── */
 
@@ -170,6 +171,21 @@ export default function JyotirlingasPage() {
           className="absolute left-[28px] md:left-1/2 top-0 w-1 bg-gradient-to-b from-blue-500 via-purple-500 to-amber-500 -translate-x-1/2 z-10 origin-top shadow-[0_0_15px_rgba(59,130,246,0.8)]"
           style={{ height: lineHeight }}
         />
+
+        {/* The upside-down moving Trishul */}
+        <motion.div
+          className="absolute left-[28px] md:left-1/2 -translate-x-1/2 z-20"
+          style={{ top: lineHeight }}
+        >
+          <div className="relative w-[108px] h-[108px] -mt-[54px] pointer-events-none">
+            <Image
+              alt="Trishul Scroll Tracker"
+              className="object-contain rotate-180 mix-blend-screen"
+              fill
+              src="/logos/trishul-logo.png"
+            />
+          </div>
+        </motion.div>
 
         {jyotirlingaData.map((site, index) => (
           <JyotirlingaCard

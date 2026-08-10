@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import AudioProvider from "@/context/AudioProvider";
 import GlobalPlayer from "@/components/GlobalPlayer";
+import AIChatBot from "@/components/AIChatBot";
 import "./globals.css";
 
 const inter = Inter({
@@ -31,7 +33,9 @@ export default function RootLayout({
         <AudioProvider>
           <Navbar />
           {children}
+          <Footer />
           <GlobalPlayer />
+          <AIChatBot />
         </AudioProvider>
       </body>
     </html>
