@@ -1,12 +1,12 @@
-# About ShivVerse
+# About ShivaVerse
 
 ## A Journey of Knowledge, Awareness & Devotion
 
-ShivVerse is a humble digital initiative dedicated to spreading awareness, knowledge, and devotion towards Lord Shiva.
+ShivaVerse is a humble digital initiative dedicated to spreading awareness, knowledge, and devotion towards Lord Shiva.
 
 Lord Shiva is revered as Mahadev, the Great God, a symbol of consciousness, transformation, meditation, compassion, and the eternal balance of creation and dissolution. His teachings and stories have inspired generations of devotees and seekers across the world.
 
-Through ShivVerse, our intention is to create a meaningful space where devotees, spiritual seekers, and anyone curious about Lord Shiva can explore and learn more about His divine presence, teachings, traditions, stories, temples, festivals, mantras, and spiritual significance.
+Through ShivaVerse, our intention is to create a meaningful space where devotees, spiritual seekers, and anyone curious about Lord Shiva can explore and learn more about His divine presence, teachings, traditions, stories, temples, festivals, mantras, and spiritual significance.
 
 ## Our Purpose
 
@@ -21,7 +21,7 @@ We aim to present spiritual and cultural information in a simple, accessible, an
 
 ## What You Can Discover
 
-At ShivVerse, you can explore content related to:
+At ShivaVerse, you can explore content related to:
 
 - 🔱 Stories and legends of Lord Shiva
 - 🕉️ Shiva mantras, prayers, and spiritual practices
@@ -38,11 +38,11 @@ Our vision is to build a digital space where knowledge becomes a path to awarene
 
 We believe that learning about Lord Shiva is not only about discovering ancient stories and traditions, but also about understanding the deeper values associated with Shiva: peace, inner strength, detachment, compassion, meditation, and transformation.
 
-ShivVerse seeks to make this knowledge accessible to everyone, regardless of where they are on their spiritual journey.
+ShivaVerse seeks to make this knowledge accessible to everyone, regardless of where they are on their spiritual journey.
 
 ## A Humble Beginning
 
-ShivVerse is created with shraddha (faith), curiosity, and respect for the timeless traditions associated with Lord Shiva.
+ShivaVerse is created with shraddha (faith), curiosity, and respect for the timeless traditions associated with Lord Shiva.
 
 Our goal is not to tell anyone what to believe. Instead, we hope to provide thoughtful information that encourages people to learn, reflect, explore, and discover their own connection with Mahadev.
 
@@ -52,4 +52,4 @@ Our goal is not to tell anyone what to believe. Instead, we hope to provide thou
 
 **Har Har Mahadev** 🔱
 
-*ShivVerse: Discover Shiva. Understand the Divine. Awaken Within.*
+*ShivaVerse: Discover Shiva. Understand the Divine. Awaken Within.*

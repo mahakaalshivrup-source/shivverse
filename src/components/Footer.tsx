@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Mail, MapPin, ArrowRight, CheckCircle2 } from 'lucide-react';
 
@@ -18,7 +19,7 @@ const shivaExplorationLinks = [
   { name: 'Symbolism', href: '/#symbolism' },
   { name: 'Stories', href: '/stories' },
   { name: 'Shlokas', href: '/mantras' },
-  { name: 'Scriptures', href: '/#library' },
+  { name: 'Scriptures', href: '/scriptures' },
   { name: 'Jyotirlingas', href: '/jyotirlingas' },
   { name: 'Darshan', href: '/maps' },
 ];
@@ -26,6 +27,7 @@ const shivaExplorationLinks = [
 export default function Footer() {
   const [email, setEmail] = useState('');
   const [isSubscribed, setIsSubscribed] = useState(false);
+  const pathname = usePathname();
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault(); // Prepare for backend wiring
@@ -56,7 +58,7 @@ export default function Footer() {
               Har Har Mahadev
             </h3>
             <p className="text-white/80 leading-relaxed max-w-lg text-sm md:text-base">
-              ShivVerse is a digital sanctuary dedicated to exploring the divine
+              ShivaVerse is a digital sanctuary dedicated to exploring the divine
               universe, sacred traditions, and timeless philosophy of Lord Shiva.
               We bridge ancient spiritual heritage with modern interactive
               experiences for seekers worldwide.
@@ -123,16 +125,25 @@ export default function Footer() {
               About Us
             </h4>
             <ul>
-              {aboutLinks.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="text-base text-white/70 hover:text-white hover:translate-x-2 hover:underline hover:underline-offset-4 decoration-white/50 transition-all duration-300 block mb-5"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
+              {aboutLinks.map((link) => {
+                const isActive = pathname === link.href;
+                return (
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      onClick={(e) => {
+                        if (isActive && !link.href.includes('#')) {
+                          e.preventDefault();
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }
+                      }}
+                      className="text-base text-white/70 hover:text-white hover:translate-x-2 hover:underline hover:underline-offset-4 decoration-white/50 transition-all duration-300 block mb-5"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
@@ -142,16 +153,25 @@ export default function Footer() {
               Shiva Exploration
             </h4>
             <ul>
-              {shivaExplorationLinks.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="text-base text-white/70 hover:text-white hover:translate-x-2 hover:underline hover:underline-offset-4 decoration-white/50 transition-all duration-300 block mb-5"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
+              {shivaExplorationLinks.map((link) => {
+                const isActive = pathname === link.href;
+                return (
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      onClick={(e) => {
+                        if (isActive && !link.href.includes('#')) {
+                          e.preventDefault();
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }
+                      }}
+                      className="text-base text-white/70 hover:text-white hover:translate-x-2 hover:underline hover:underline-offset-4 decoration-white/50 transition-all duration-300 block mb-5"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
@@ -163,7 +183,7 @@ export default function Footer() {
                 <div className="relative w-24 h-24 rounded-full overflow-hidden border-2 border-white/20 mb-6 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
                   <Image
                     src="/logos/shivalogo.png"
-                    alt="ShivVerse Logo"
+                    alt="ShivaVerse Logo"
                     fill
                     className="object-cover"
                   />
@@ -173,7 +193,7 @@ export default function Footer() {
               {/* Contact Info */}
               <div className="space-y-5">
                 <h4 className="font-[family-name:var(--font-playfair)] text-white text-xl md:text-2xl font-semibold tracking-wide">
-                  ShivVerse
+                  ShivaVerse
                 </h4>
                 <p className="text-base text-white/80 leading-loose max-w-sm">
                   A digital sanctuary for seekers of Lord Shiva&apos;s eternal wisdom.
@@ -212,7 +232,7 @@ export default function Footer() {
             COPYRIGHT BAR
             ═══════════════════════════════════════════════════════════ */}
         <div className="text-xs text-white/50 text-center mt-16 pt-8 border-t border-white/20">
-          © {new Date().getFullYear()} ShivVerse. All rights reserved.
+          © {new Date().getFullYear()} ShivaVerse. All rights reserved.
         </div>
       </div>
     </footer>

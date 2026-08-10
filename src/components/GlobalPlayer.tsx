@@ -78,17 +78,16 @@ export default function GlobalPlayer() {
         </div>
 
         <div className="px-4 md:px-6 py-3 flex flex-col md:flex-row items-center gap-3 md:gap-4 relative">
-          {/* Close Button for Mobile */}
-          <button
-            onClick={closePlayer}
-            className="md:hidden absolute top-2 right-4 text-white/50 hover:text-white transition-colors z-10"
-            aria-label="Close player"
-          >
-            <X size={20} />
-          </button>
-
           {/* ─── Left: Track Info ─── */}
           <div className="flex items-center gap-3 w-full md:w-1/3 min-w-0 pr-8 md:pr-0">
+            {/* Close Button (Visible on all devices on the left) */}
+            <button
+              onClick={closePlayer}
+              className="text-white/50 hover:text-white transition-colors flex-shrink-0"
+              aria-label="Close player"
+            >
+              <X size={20} />
+            </button>
             {/* Thumbnail */}
             <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden flex-shrink-0 border border-white/10 relative">
               {!imgFailed ? (

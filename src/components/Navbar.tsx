@@ -17,7 +17,7 @@ const navLinks = [
   { name: "Symbolism", href: "/#symbolism" },
   { name: "Stories", href: "/stories" },
   { name: "Shlokas", href: "/mantras" },
-  { name: "Scriptures", href: "/#library" },
+  { name: "Scriptures", href: "/scriptures" },
   { name: "Jyotirlingas", href: "/jyotirlingas" },
   { name: "Darshan", href: "/maps" },
   { name: "About", href: "/about" },
@@ -64,6 +64,12 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
+                onClick={(e) => {
+                  if (isActive && !link.href.includes('#')) {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
+                }}
                 className={cn(
                   "relative text-base font-medium tracking-wide transition-colors hover:text-white",
                   isActive ? "text-white" : "text-gray-400"
@@ -108,7 +114,13 @@ export default function Navbar() {
                   <Link
                     key={link.name}
                     href={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={(e) => {
+                      if (isActive && !link.href.includes('#')) {
+                        e.preventDefault();
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                      }
+                      setIsMobileMenuOpen(false);
+                    }}
                     className={cn(
                       "text-xl font-medium tracking-wide transition-colors p-2 rounded-md",
                       isActive ? "text-white bg-white/10" : "text-gray-400 hover:text-white hover:bg-white/5"
