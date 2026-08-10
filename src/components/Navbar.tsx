@@ -20,6 +20,7 @@ const navLinks = [
   { name: "Scriptures", href: "/scriptures" },
   { name: "Jyotirlingas", href: "/jyotirlingas" },
   { name: "Darshan", href: "/maps" },
+  { name: "Live", href: "/live" },
   { name: "About", href: "/about" },
 ];
 

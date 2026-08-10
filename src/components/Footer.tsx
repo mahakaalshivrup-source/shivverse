@@ -22,6 +22,7 @@ const shivaExplorationLinks = [
   { name: 'Scriptures', href: '/scriptures' },
   { name: 'Jyotirlingas', href: '/jyotirlingas' },
   { name: 'Darshan', href: '/maps' },
+  { name: 'Live', href: '/live' },
 ];
 
 export default function Footer() {
