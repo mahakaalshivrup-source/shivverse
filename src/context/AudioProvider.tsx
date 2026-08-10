@@ -28,6 +28,7 @@ interface AudioContextType {
   setVolume: (v: number) => void;
   playNext: () => void;
   playPrev: () => void;
+  closePlayer: () => void;
   audioRef: React.RefObject<HTMLAudioElement | null>;
 }
 

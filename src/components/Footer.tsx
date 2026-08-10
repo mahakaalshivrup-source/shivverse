@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { Mail, MapPin, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const aboutLinks = [
-  { name: 'A Journey of Knowledge, Awareness & Devotion', href: '/about#a-journey-of-knowledge-awareness--devotion' },
+  { name: 'A Journey of Knowledge, Awareness & Devotion', href: '/about#a-journey-of-knowledge-awareness-devotion' },
   { name: 'Our Purpose', href: '/about#our-purpose' },
   { name: 'What You Can Discover', href: '/about#what-you-can-discover' },
   { name: 'Our Vision', href: '/about#our-vision' },
@@ -15,12 +15,12 @@ const aboutLinks = [
 
 const shivaExplorationLinks = [
   { name: 'Home', href: '/' },
-  { name: 'Symbolism', href: '/symbolism' },
+  { name: 'Symbolism', href: '/#symbolism' },
   { name: 'Stories', href: '/stories' },
-  { name: 'Shlokas', href: '/shlokas' },
-  { name: 'Library', href: '/library' },
+  { name: 'Shlokas', href: '/mantras' },
+  { name: 'Scriptures', href: '/#library' },
   { name: 'Jyotirlingas', href: '/jyotirlingas' },
-  { name: 'Darshan', href: '/darshan' },
+  { name: 'Darshan', href: '/maps' },
 ];
 
 export default function Footer() {
@@ -119,7 +119,7 @@ export default function Footer() {
 
           {/* ── Column 1: About Us ── */}
           <div>
-            <h4 className="font-[family-name:var(--font-playfair)] text-white text-xl md:text-2xl font-semibold mb-6 tracking-wide">
+            <h4 className="font-[family-name:var(--font-playfair)] text-white text-xl md:text-2xl font-semibold mb-6 tracking-wide hover:underline hover:underline-offset-8 decoration-white/50 w-fit cursor-default transition-all">
               About Us
             </h4>
             <ul>
@@ -127,7 +127,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-base text-white/70 hover:text-white hover:translate-x-2 transition-all duration-300 block mb-5"
+                    className="text-base text-white/70 hover:text-white hover:translate-x-2 hover:underline hover:underline-offset-4 decoration-white/50 transition-all duration-300 block mb-5"
                   >
                     {link.name}
                   </Link>
@@ -138,7 +138,7 @@ export default function Footer() {
 
           {/* ── Column 2: Shiva Exploration ── */}
           <div>
-            <h4 className="font-[family-name:var(--font-playfair)] text-white text-xl md:text-2xl font-semibold mb-6 tracking-wide">
+            <h4 className="font-[family-name:var(--font-playfair)] text-white text-xl md:text-2xl font-semibold mb-6 tracking-wide hover:underline hover:underline-offset-8 decoration-white/50 w-fit cursor-default transition-all">
               Shiva Exploration
             </h4>
             <ul>
@@ -146,7 +146,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-base text-white/70 hover:text-white hover:translate-x-2 transition-all duration-300 block mb-5"
+                    className="text-base text-white/70 hover:text-white hover:translate-x-2 hover:underline hover:underline-offset-4 decoration-white/50 transition-all duration-300 block mb-5"
                   >
                     {link.name}
                   </Link>
@@ -181,14 +181,14 @@ export default function Footer() {
 
                 {/* Email */}
                 <a
-                  href="mailto:contact@shivverse1.vercel.app"
-                  className="flex items-center gap-3 text-base text-white/80 hover:text-white transition-colors duration-300 group"
+                  href="mailto:mahakaalshiv1987@gmail.com"
+                  className="flex items-center gap-3 text-base text-white/80 hover:text-white hover:underline hover:underline-offset-4 decoration-white/50 transition-colors duration-300 group w-fit"
                 >
                   <Mail
                     size={18}
                     className="text-white/60 group-hover:text-white transition-colors duration-300"
                   />
-                  contact@shivverse1.vercel.app
+                  mahakaalshiv1987@gmail.com
                 </a>
 
                 {/* Address */}
