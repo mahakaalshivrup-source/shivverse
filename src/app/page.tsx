@@ -1,6 +1,11 @@
 import HeroSection from "@/components/HeroSection";
 import SymbolismSection from "@/components/SymbolismSection";
-import SacredTextsSection from "@/components/SacredTextsSection";
+import dynamic from "next/dynamic";
+
+const SacredTextsSection = dynamic(
+  () => import("@/components/SacredTextsSection"),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
