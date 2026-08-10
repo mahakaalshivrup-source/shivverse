@@ -16,7 +16,8 @@ function extractText(children: React.ReactNode): string {
     if (children.type === 'br') {
       return '\n';
     }
-    return extractText(children.props.children);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return extractText((children.props as any).children);
   }
   return '';
 }
