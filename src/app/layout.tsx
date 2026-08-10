@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import AudioProvider from "@/context/AudioProvider";
 import GlobalPlayer from "@/components/GlobalPlayer";
 import AIChatBot from "@/components/AIChatBot";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const inter = Inter({
@@ -36,6 +37,7 @@ export default function RootLayout({
           <Footer />
           <GlobalPlayer />
           <AIChatBot />
+          <SpeedInsights />
         </AudioProvider>
       </body>
     </html>
