@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
+import Image from "next/image";
 import { useAudio } from "@/context/AudioProvider";
 import mantrasData from "@/data/mantrasData";
 import type { Mantra } from "@/data/mantrasData";
@@ -17,6 +18,25 @@ const gradients = [
   "from-violet-950 via-gray-900 to-black",
   "from-emerald-950 via-gray-900 to-black",
 ];
+
+// ═══════════════════════════════════════════════════
+// CLS Skeleton Loader (Option B)
+// ═══════════════════════════════════════════════════
+function MantraCardSkeleton() {
+  return (
+    <div className="relative overflow-hidden rounded-2xl bg-gray-900/50 text-left animate-pulse">
+      {/* Strict aspect ratio wrapper identical to real cards */}
+      <div className="relative aspect-square overflow-hidden bg-white/5" />
+      
+      {/* Exact padding mirroring the real cards */}
+      <div className="p-4 md:p-5">
+        <div className="h-[18px] md:h-5 bg-white/10 rounded w-2/3 mb-1" />
+        <div className="h-4 bg-white/10 rounded w-full mt-2" />
+        <div className="h-4 bg-white/10 rounded w-4/5 mt-1" />
+      </div>
+    </div>
+  );
+}
 
 // ═══════════════════════════════════════════════════
 // Single Card
@@ -48,14 +68,16 @@ function MantraCard({
         ${isActive ? "ring-2 ring-blue-500/50 shadow-[0_0_40px_rgba(59,130,246,0.2)]" : ""}
       `}
     >
-      {/* Thumbnail */}
-      <div className="relative aspect-square overflow-hidden">
+      {/* Thumbnail with strict aspect ratio wrapper to prevent CLS */}
+      <div className="relative aspect-square overflow-hidden bg-black/20">
         {!imgFailed ? (
-          <img
+          <Image
             src={mantra.thumbnail}
             alt={mantra.title}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             onError={() => setImgFailed(true)}
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-[1.8]"
+            className="object-cover group-hover:scale-110 transition-transform duration-700 brightness-[1.8]"
           />
         ) : (
           <div
@@ -122,9 +144,32 @@ export default function MantrasGrid({
   onSelectMantra: (mantra: Mantra, index: number) => void;
 }) {
   const { playTrack } = useAudio();
+  const [mantras, setMantras] = useState<Mantra[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Simulated Database Fetch
+  useEffect(() => {
+    let isMounted = true;
+
+    const fetchMantras = async () => {
+      // In a real database fetch, this would be: const res = await fetch('/api/mantras');
+      await new Promise(resolve => setTimeout(resolve, 1500)); 
+      
+      if (isMounted) {
+        setMantras(mantrasData);
+        setIsLoading(false);
+      }
+    };
+
+    fetchMantras();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   const handlePlay = (mantra: Mantra, index: number) => {
-    playTrack(mantra, index, mantrasData);
+    playTrack(mantra, index, mantras);
     onSelectMantra(mantra, index);
   };
 
@@ -147,16 +192,20 @@ export default function MantrasGrid({
         </p>
       </motion.div>
 
-      {/* Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-        {mantrasData.map((mantra, index) => (
-          <MantraCard
-            key={mantra.id}
-            mantra={mantra}
-            index={index}
-            onPlay={() => handlePlay(mantra, index)}
-          />
-        ))}
+      {/* Grid: CSS Classes match skeletons perfectly */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 min-h-[500px]">
+        {isLoading
+          ? Array(6)
+              .fill(0)
+              .map((_, i) => <MantraCardSkeleton key={`skeleton-${i}`} />)
+          : mantras.map((mantra, index) => (
+              <MantraCard
+                key={mantra.id}
+                mantra={mantra}
+                index={index}
+                onPlay={() => handlePlay(mantra, index)}
+              />
+            ))}
       </div>
     </div>
   );
