@@ -47,23 +47,33 @@ export default function RetroLiveTV() {
 
   // Toggle Mute via postMessage
   useEffect(() => {
-    if (isPowerOn && isPreloaded) {
+    if (!isPreloaded) return;
+
+    if (isPowerOn) {
       if (isMuted) {
         sendIframeCommand("mute");
       } else {
         sendIframeCommand("unMute");
       }
+    } else {
+      // Force mute when powered off
+      sendIframeCommand("mute");
     }
   }, [isMuted, isPowerOn, isPreloaded]);
 
   // Toggle Play/Pause via postMessage
   useEffect(() => {
-    if (isPowerOn && isPreloaded) {
+    if (!isPreloaded) return;
+
+    if (isPowerOn) {
       if (isPlaying) {
         sendIframeCommand("playVideo");
       } else {
         sendIframeCommand("pauseVideo");
       }
+    } else {
+      // Force pause when powered off
+      sendIframeCommand("pauseVideo");
     }
   }, [isPlaying, isPowerOn, isPreloaded]);
 
