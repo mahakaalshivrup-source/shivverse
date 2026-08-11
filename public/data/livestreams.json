@@ -1,5 +1,6 @@
 [
-  { "id": "ch-1", "channelNumber": "01", "source": "https://www.youtube.com/live/QBzvJPBafs4?si=yqQ3iV1CeHF_pw6R" },
-  { "id": "ch-2", "channelNumber": "02", "source": "https://www.youtube.com/live/4oaI1N3UCVE?si=KjJbsuJ1zxOe64D3" },
-  { "id": "ch-3", "channelNumber": "03", "source": "https://www.youtube.com/live/KN-eihqucr4?si=slCSHW_TAVvv54a4" }
+  { "id": "ch-1", "channelNumber": "01", "name": "Shri Omkareshwar", "channelId": "UCsIZ3yYwCW4316fPX3V-4lg" },
+  { "id": "ch-2", "channelNumber": "02", "name": "Temple Channel 2", "channelId": "UCiH1r_BDhmHU4_CXX2mlcXw" },
+  { "id": "ch-3", "channelNumber": "03", "name": "Somnath Temple", "channelId": "UCT1egsvA08YcdMLiEu1DTRg" },
+  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 4", "channelId": "UCdMj2twWfMHXrWgX5oVdoyA" }
 ]
