@@ -1,31 +1,44 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import ShivaInteractiveMap from "./ShivaInteractiveMap";
 import { motion } from "framer-motion";
 
 export default function SymbolismSection() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      // Force muted state via JS before playing to bypass iOS blocks
+      video.muted = true;
+      video.defaultMuted = true;
+      video.setAttribute('playsinline', 'true');
+      
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(error => {
+          console.warn("Autoplay blocked by browser:", error);
+        });
+      }
+    }
+  }, []);
   return (
     <section
       id="symbolism"
       className="relative w-full min-h-screen overflow-hidden flex flex-col items-center justify-center bg-black py-16"
     >
       {/* Bulletproof iOS Autoplay Video Wrapper */}
-      <div
-        className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-60 scale-105"
-        dangerouslySetInnerHTML={{
-          __html: `
-            <video
-              autoplay
-              loop
-              muted
-              playsinline
-              style="width: 100%; height: 100%; object-fit: cover; border: none; outline: none;"
-            >
-              <source src="/New folder/landing2vidoe.webm" type="video/webm" />
-            </video>
-          `
-        }}
-      />
+      <video
+        ref={videoRef}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-60 scale-105 object-cover"
+      >
+        <source src="/New folder/landing2vidoe.webm" type="video/webm" />
+      </video>
 
       {/* Gradient Blending Overlay (z-10) */}
       <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-black via-black/30 to-black" />

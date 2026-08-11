@@ -222,10 +222,10 @@ export default function RetroLiveTV() {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full max-w-5xl mx-auto my-12">
       {/* TV Cabinet */}
-      <div className="relative bg-[#111] border-8 border-[#222] rounded-[2rem] p-6 shadow-2xl flex-1 w-full flex flex-col md:flex-row gap-6">
+      <div className="relative bg-[#111] border-4 md:border-8 border-[#222] rounded-[1.5rem] md:rounded-[2rem] p-2 md:p-6 shadow-2xl flex-1 w-full flex flex-col md:flex-row gap-2 md:gap-6">
         
         {/* CRT Glass Screen Container */}
-        <div className="relative aspect-video bg-black overflow-hidden border-4 border-black rounded-[1.5rem] flex-1 shadow-[inset_0_0_20px_rgba(0,0,0,1)]">
+        <div className="relative aspect-video w-full bg-black overflow-hidden border-2 md:border-4 border-black rounded-xl md:rounded-[1.5rem] flex-1 shadow-[inset_0_0_20px_rgba(0,0,0,1)]">
           
           {/* Turn Off Animation / Standby Screen */}
           <AnimatePresence>
@@ -297,12 +297,12 @@ export default function RetroLiveTV() {
         </div>
 
         {/* Physical Control Panel */}
-        <div className="w-full md:w-28 bg-[#1a1a1a] rounded-xl p-4 border-2 border-[#111] shadow-inner flex md:flex-col items-center justify-between gap-6">
+        <div className="w-full md:w-28 bg-[#1a1a1a] rounded-xl p-2 md:p-4 border-2 border-[#111] shadow-inner flex flex-row md:flex-col items-center justify-center md:justify-between gap-2 md:gap-6 mt-1 md:mt-0">
           
           {/* Power Section */}
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-1 md:gap-2">
             <div 
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
                 isPowerOn 
                   ? 'bg-green-500 shadow-[0_0_10px_#22c55e]' 
                   : (!isPreloaded ? 'bg-yellow-500 shadow-[0_0_10px_#eab308] animate-pulse' : 'bg-red-500 shadow-[0_0_10px_#ef4444]')
@@ -311,54 +311,54 @@ export default function RetroLiveTV() {
             <motion.button
               whileTap={{ scale: 0.95 }}
               onClick={handlePowerToggle}
-              className={`w-12 h-12 rounded-full flex items-center justify-center border-b-4 active:border-b-0 transition-all ${isPowerOn ? 'bg-red-600 border-red-800' : 'bg-[#333] border-[#111]'}`}
+              className={`w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center border-b-[3px] md:border-b-4 active:border-b-0 transition-all ${isPowerOn ? 'bg-red-600 border-red-800' : 'bg-[#333] border-[#111]'}`}
               title="Power"
             >
-              <Power size={20} className={isPowerOn ? 'text-white' : 'text-gray-400'} />
+              <Power className={`w-4 h-4 md:w-5 md:h-5 ${isPowerOn ? 'text-white' : 'text-gray-400'}`} />
             </motion.button>
-            <span className="text-[10px] text-gray-500 uppercase font-bold tracking-widest mt-1">Power</span>
+            <span className="text-[8px] md:text-[10px] text-gray-500 uppercase font-bold tracking-widest mt-0 md:mt-1">Power</span>
           </div>
 
-          <div className="w-[2px] h-full md:w-full md:h-[2px] bg-black/40 rounded-full" />
+          <div className="w-[1px] h-12 md:w-full md:h-[2px] bg-black/40 rounded-full mx-1 md:mx-0" />
 
           {/* Playback & Volume */}
-          <div className="flex md:flex-col gap-4">
+          <div className="flex flex-row md:flex-col gap-2 md:gap-4">
             <motion.button
               whileTap={{ scale: 0.95 }}
               onClick={() => { if(isPowerOn && !isOffline) setIsPlaying(!isPlaying); }}
-              className="w-10 h-10 rounded-lg bg-[#333] border-b-4 border-[#111] active:border-b-0 flex items-center justify-center text-gray-300 hover:text-white transition-all cursor-pointer"
+              className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-[#333] border-b-[3px] md:border-b-4 border-[#111] active:border-b-0 flex items-center justify-center text-gray-300 hover:text-white transition-all cursor-pointer"
             >
-              {isPlaying ? <Pause size={18} /> : <Play size={18} className="ml-1" />}
+              {isPlaying ? <Pause className="w-3 h-3 md:w-4 md:h-4" /> : <Play className="w-3 h-3 md:w-4 md:h-4 ml-1" />}
             </motion.button>
             
             <motion.button
               whileTap={{ scale: 0.95 }}
               onClick={() => { if(isPowerOn) setIsMuted(!isMuted); }}
-              className="w-10 h-10 rounded-lg bg-[#333] border-b-4 border-[#111] active:border-b-0 flex items-center justify-center text-gray-300 hover:text-white transition-all cursor-pointer"
+              className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-[#333] border-b-[3px] md:border-b-4 border-[#111] active:border-b-0 flex items-center justify-center text-gray-300 hover:text-white transition-all cursor-pointer"
             >
-              {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
+              {isMuted ? <VolumeX className="w-3 h-3 md:w-4 md:h-4" /> : <Volume2 className="w-3 h-3 md:w-4 md:h-4" />}
             </motion.button>
           </div>
 
-          <div className="w-[2px] h-full md:w-full md:h-[2px] bg-black/40 rounded-full" />
+          <div className="w-[1px] h-12 md:w-full md:h-[2px] bg-black/40 rounded-full mx-1 md:mx-0" />
 
           {/* Channel Selector */}
-          <div className="flex flex-col items-center gap-3">
-             <span className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Channel</span>
-             <div className="flex md:flex-col gap-2">
+          <div className="flex flex-col items-center gap-1 md:gap-3">
+             <span className="text-[8px] md:text-[10px] text-gray-500 uppercase font-bold tracking-widest">Channel</span>
+             <div className="flex flex-row md:flex-col gap-2">
                 <motion.button
                   whileTap={{ scale: 0.95 }}
                   onClick={handleNextChannel}
-                  className="w-10 h-10 rounded-full bg-[#444] border-b-4 border-[#222] active:border-b-0 flex items-center justify-center text-gray-200 hover:bg-[#555] cursor-pointer"
+                  className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#444] border-b-[3px] md:border-b-4 border-[#222] active:border-b-0 flex items-center justify-center text-gray-200 hover:bg-[#555] cursor-pointer"
                 >
-                  <Plus size={20} />
+                  <Plus className="w-4 h-4 md:w-5 md:h-5" />
                 </motion.button>
                 <motion.button
                   whileTap={{ scale: 0.95 }}
                   onClick={handlePrevChannel}
-                  className="w-10 h-10 rounded-full bg-[#444] border-b-4 border-[#222] active:border-b-0 flex items-center justify-center text-gray-200 hover:bg-[#555] cursor-pointer"
+                  className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#444] border-b-[3px] md:border-b-4 border-[#222] active:border-b-0 flex items-center justify-center text-gray-200 hover:bg-[#555] cursor-pointer"
                 >
-                  <Minus size={20} />
+                  <Minus className="w-4 h-4 md:w-5 md:h-5" />
                 </motion.button>
              </div>
           </div>
