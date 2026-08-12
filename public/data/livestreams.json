@@ -1,16 +1,12 @@
 [
-  { "id": "ch-1", "channelNumber": "01", "name": "Shri Omkareshwar", "channelId": "UCsIZ3yYwCW4316fPX3V-4lg" },
+  { "id": "ch-1", "channelNumber": "01", "name": "Temple Channel 1", "channelId": "UCsIZ3yYwCW4316fPX3V-4lg" },
   { "id": "ch-2", "channelNumber": "02", "name": "Temple Channel 2", "channelId": "UCiH1r_BDhmHU4_CXX2mlcXw" },
-  { "id": "ch-3", "channelNumber": "03", "name": "Somnath Temple", "channelId": "UCT1egsvA08YcdMLiEu1DTRg" },
+  { "id": "ch-3", "channelNumber": "03", "name": "Temple channel 3", "channelId": "UCT1egsvA08YcdMLiEu1DTRg" },
   { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 4", "channelId": "UCdMj2twWfMHXrWgX5oVdoyA" },
-  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 4", "channelId": "UCmVh_JJg-jurl1G-8opW1zw" },
-  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 4", "channelId": "UC7Uo3euG3IA0yBlQyIXDcUA" },
-  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 4", "channelId": "UCBAvMHZO3BIfMMhOK9LMOYQ" },
-  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 4", "channelId": "UC5hZNkltWH1OjHRIw0btQyQ" },
-  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 4", "channelId": "UCwh96MUAk0m81vEXaHVm6Ng" },
-  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 4", "channelId": "" },
-  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 4", "channelId": "UCdMj2twWfMHXrWgX5oVdoyA" },
-  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 4", "channelId": "UCdMj2twWfMHXrWgX5oVdoyA" },
-  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 4", "channelId": "UCdMj2twWfMHXrWgX5oVdoyA" },
-  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 4", "channelId": "UCdMj2twWfMHXrWgX5oVdoyA" }
+  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 5", "channelId": "UCmVh_JJg-jurl1G-8opW1zw" },
+  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 6", "channelId": "UC7Uo3euG3IA0yBlQyIXDcUA" },
+  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 7", "channelId": "UCBAvMHZO3BIfMMhOK9LMOYQ" },
+  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 8", "channelId": "UC5hZNkltWH1OjHRIw0btQyQ" },
+  { "id": "ch-4", "channelNumber": "04", "name": "Temple Channel 9", "channelId": "UCwh96MUAk0m81vEXaHVm6Ng" }
+
 ]
