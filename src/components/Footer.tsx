@@ -12,6 +12,7 @@ const aboutLinks = [
   { name: 'What You Can Discover', href: '/about#what-you-can-discover' },
   { name: 'Our Vision', href: '/about#our-vision' },
   { name: 'A Humble Beginning', href: '/about#a-humble-beginning' },
+  { name: 'Contact Us', href: '/contact' },
 ];
 
 const shivaExplorationLinks = [

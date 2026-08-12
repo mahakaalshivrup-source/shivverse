@@ -45,11 +45,10 @@ const MarkerDot = memo(function MarkerDot({ name, isWarping }: { name: string; i
         style={{ animationDuration: isWarping ? "0.6s" : "2s" }}
       />
       <span
-        className={`absolute w-6 h-6 rounded-full border transition-all duration-300 ${
-          isWarping
+        className={`absolute w-6 h-6 rounded-full border transition-all duration-300 ${isWarping
             ? "border-amber-400 bg-amber-500/20 scale-150 shadow-[0_0_20px_rgba(251,191,36,0.9)]"
             : "border-blue-400/80 bg-blue-500/10 group-hover:scale-125 shadow-[0_0_10px_rgba(59,130,246,0.5)]"
-        }`}
+          }`}
       />
       <span className="relative w-2.5 h-2.5 rounded-full bg-white shadow-[0_0_8px_#fff]" />
       <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 hidden group-hover:block whitespace-nowrap bg-black/90 text-white text-[11px] font-medium px-2.5 py-1 rounded border border-white/20 shadow-lg pointer-events-none z-30">

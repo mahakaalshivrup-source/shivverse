@@ -14,7 +14,6 @@ function cn(...inputs: (string | undefined | null | false)[]) {
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Symbolism", href: "/#symbolism" },
   { name: "Stories", href: "/stories" },
   { name: "Shlokas", href: "/mantras" },
   { name: "Scriptures", href: "/scriptures" },
@@ -22,6 +21,7 @@ const navLinks = [
   { name: "Darshan", href: "/maps" },
   { name: "Live", href: "/live" },
   { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {

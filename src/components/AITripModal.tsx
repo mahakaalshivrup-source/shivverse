@@ -231,7 +231,7 @@ export default function AITripModal({
                             🚗 By Road
                           </span>
                           <a
-                            href={`https://www.google.com/maps/dir/${encodeURIComponent(tripPlan.road.searchQuery)}`}
+                            href={`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(userCity)}&destination=${encodeURIComponent(`${selectedJyotirlinga.name}, ${selectedJyotirlinga.location}`)}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-2 py-1 border border-white/20 rounded-md text-[10px] uppercase tracking-wider text-white/50 hover:text-white/90 hover:bg-white/10 transition-colors"
