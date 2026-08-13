@@ -18,7 +18,7 @@ export async function POST(request: Request) {
     if (username === envUsername && password === envPassword) {
       // Set an HTTP-only secure cookie
       const cookieStore = await cookies();
-      cookieStore.set('admin_session', 'authenticated', {
+      cookieStore.set('admin_session', envPassword, {
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production',
         sameSite: 'strict',

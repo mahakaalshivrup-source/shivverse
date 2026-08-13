@@ -2,7 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import { extractPdfThumbnail } from '@/lib/extractPdfThumbnail';
-import { Loader2, Trash2, Edit2, X, UploadCloud, CheckCircle, FileText, LogOut } from 'lucide-react';
+import { Trash2, Edit2, X, UploadCloud, CheckCircle, FileText, LogOut } from 'lucide-react';
+import { TrishulLoader } from '@/components/TrishulLoader';
+import { CloudflareImage } from '@/components/CloudflareImage';
 import dynamic from 'next/dynamic';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
@@ -287,7 +289,7 @@ export default function AdminPage() {
             </div>
           )}
           {loading ? (
-            <div className="flex justify-center p-20"><Loader2 className="animate-spin text-white/50" size={48} /></div>
+            <div className="flex justify-center p-20"><TrishulLoader size={48} /></div>
           ) : (
             <>
               {/* STORIES TAB */}
@@ -308,7 +310,7 @@ export default function AdminPage() {
                         <CustomFileUpload title="Artwork Cover" fieldName="thumbnail" file={files.thumbnail} isEdit={!!editId} accept="image/*" />
                       </div>
                       <button disabled={submitting || !!submitSuccess} className="md:col-span-2 mt-4 bg-blue-600 hover:bg-blue-500 disabled:opacity-70 text-white font-bold py-4 rounded-full transition-all flex justify-center items-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.3)]">
-                        {submitting ? <Loader2 className="animate-spin" /> : submitSuccess ? <><CheckCircle size={20}/> {submitSuccess}</> : (editId?.type === 'story' ? 'Update Story' : 'Submit Story')}
+                        {submitting ? <TrishulLoader size={24} /> : submitSuccess ? <><CheckCircle size={20}/> {submitSuccess}</> : (editId?.type === 'story' ? 'Update Story' : 'Submit Story')}
                       </button>
                     </form>
                   </div>
@@ -319,7 +321,7 @@ export default function AdminPage() {
                         <div key={story.id} className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col justify-between group hover:bg-white/10 transition h-full shadow-lg">
                           <div className="flex flex-col items-center gap-4 mb-4">
                             {story.image_url ? (
-                                <img src={story.image_url} alt={story.title} className="w-full aspect-square object-cover rounded-xl shadow-md" />
+                                <CloudflareImage src={story.image_url} alt={story.title} className="w-full aspect-square rounded-xl shadow-md" />
                             ) : (
                                 <div className="w-full aspect-square bg-black/40 rounded-xl flex items-center justify-center text-xs text-white/30 shadow-md">No Image</div>
                             )}
@@ -354,7 +356,7 @@ export default function AdminPage() {
                       <CustomFileUpload title="Artwork Cover" fieldName="cover" file={files.cover} isEdit={!!editId} accept="image/*" />
                       
                       <button disabled={submitting || !!submitSuccess} className="md:col-span-2 mt-4 bg-blue-600 hover:bg-blue-500 disabled:opacity-70 text-white font-bold py-4 rounded-full transition-all flex justify-center items-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.3)]">
-                        {submitting ? <Loader2 className="animate-spin" /> : submitSuccess ? <><CheckCircle size={20}/> {submitSuccess}</> : (editId?.type === 'mantra' ? 'Update Mantra' : 'Submit Mantra')}
+                        {submitting ? <TrishulLoader size={24} /> : submitSuccess ? <><CheckCircle size={20}/> {submitSuccess}</> : (editId?.type === 'mantra' ? 'Update Mantra' : 'Submit Mantra')}
                       </button>
                     </form>
                   </div>
@@ -365,7 +367,7 @@ export default function AdminPage() {
                         <div key={mantra.id} className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col justify-between group hover:bg-white/10 transition h-full shadow-lg">
                           <div className="flex flex-col items-center gap-4 mb-4">
                             {mantra.image_url ? (
-                                <img src={mantra.image_url} alt={mantra.title} className="w-full aspect-square object-cover rounded-xl shadow-md" />
+                                <CloudflareImage src={mantra.image_url} alt={mantra.title} className="w-full aspect-square rounded-xl shadow-md" />
                             ) : (
                                 <div className="w-full aspect-square bg-black/40 rounded-xl flex items-center justify-center text-xs text-white/30 shadow-md">No Image</div>
                             )}
@@ -401,7 +403,7 @@ export default function AdminPage() {
                       </div>
                       
                       <button disabled={submitting || !!submitSuccess} className="md:col-span-2 mt-4 bg-blue-600 hover:bg-blue-500 disabled:opacity-70 text-white font-bold py-4 rounded-full transition-all flex justify-center items-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.3)]">
-                        {submitting ? <Loader2 className="animate-spin" /> : submitSuccess ? <><CheckCircle size={20}/> {submitSuccess}</> : (editId?.type === 'scripture' ? 'Update Scripture' : 'Submit Scripture')}
+                        {submitting ? <TrishulLoader size={24} /> : submitSuccess ? <><CheckCircle size={20}/> {submitSuccess}</> : (editId?.type === 'scripture' ? 'Update Scripture' : 'Submit Scripture')}
                       </button>
                     </form>
                   </div>
@@ -412,11 +414,11 @@ export default function AdminPage() {
                         <div key={book.id} className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col justify-between group hover:bg-white/10 transition h-full shadow-lg">
                           <div className="flex flex-col items-center gap-4 mb-4">
                             {book.image_url ? (
-                                <img src={book.image_url} alt={book.title} className="w-full aspect-[3/4] object-cover rounded-xl shadow-md" />
+                                <CloudflareImage src={book.image_url} alt={book.title} className="w-full aspect-[3/4] rounded-xl shadow-md" />
                             ) : book.pdfUrl ? (
                                 <div className="w-full aspect-[3/4] rounded-xl overflow-hidden shadow-md relative bg-white flex items-center justify-center">
                                     <div className="w-full h-full pointer-events-none opacity-90 overflow-hidden flex justify-center items-center">
-                                      <Document file={book.pdfUrl} options={{ withCredentials: false }} loading={<Loader2 className="animate-spin text-black/20" />}>
+                                      <Document file={encodeURI(book.pdfUrl)} options={{ withCredentials: false }} error={(err) => <div className="text-red-500 text-[10px] text-center p-1 break-all">{err?.message || "Failed"}</div>} loading={<TrishulLoader size={32} />}>
                                           <PdfPage pageNumber={1} width={250} renderTextLayer={false} renderAnnotationLayer={false} />
                                       </Document>
                                     </div>

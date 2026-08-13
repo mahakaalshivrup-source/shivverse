@@ -1,7 +1,7 @@
 export async function extractPdfThumbnail(file: File): Promise<{ pdfFile: File, thumbnailBlob: Blob }> {
   // Dynamically import to prevent SSR build errors
   const pdfjsLib = await import('pdfjs-dist');
-  pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
+  pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
 
   return new Promise((resolve, reject) => {
     const fileReader = new FileReader();

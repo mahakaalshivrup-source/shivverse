@@ -2,7 +2,8 @@
 
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ArrowRight, Loader2 } from "lucide-react";
+import { X, ArrowRight } from "lucide-react";
+import { TrishulLoader } from '@/components/TrishulLoader';
 import type { JyotirlingaLocation } from "@/data/jyotirlingaData";
 
 interface TripRoute {
@@ -189,7 +190,7 @@ export default function AITripModal({
                   >
                     <div className="bg-white/5 border border-white/5 rounded-2xl rounded-tl-md px-4 py-3 inline-block">
                       <div className="flex items-center gap-2 text-white/50 text-sm">
-                        <Loader2 size={13} className="animate-spin" />
+                        <TrishulLoader size={16} />
                         <span>Calculating routes…</span>
                       </div>
                     </div>

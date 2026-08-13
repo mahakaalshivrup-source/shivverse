@@ -2,7 +2,8 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Send, Loader2 } from "lucide-react";
+import { X, Send } from "lucide-react";
+import { TrishulLoader } from '@/components/TrishulLoader';
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 
@@ -270,9 +271,9 @@ export default function AIChatBot() {
                   className="flex justify-start"
                 >
                   <div className="bg-white/5 border border-white/10 rounded-r-xl rounded-tl-xl px-4 py-3 flex items-center gap-2">
-                    <Loader2
-                      size={14}
-                      className="animate-spin text-white/50"
+                    <TrishulLoader
+                      size={20}
+                      className="text-orange-500"
                     />
                     <span className="text-white/40 text-sm">
                       Channeling wisdom...

@@ -3,11 +3,12 @@ import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const adminPassword = process.env.ADMIN_PASSWORD;
   
   // Protect /admin routes (except /admin/login)
   if (pathname.startsWith('/admin') && pathname !== '/admin/login') {
     const sessionCookie = request.cookies.get('admin_session');
-    if (!sessionCookie) {
+    if (!sessionCookie || sessionCookie.value !== adminPassword) {
       return NextResponse.redirect(new URL('/admin/login', request.url));
     }
   }
@@ -15,7 +16,7 @@ export function middleware(request: NextRequest) {
   // Protect /api/admin routes
   if (pathname.startsWith('/api/admin')) {
     const sessionCookie = request.cookies.get('admin_session');
-    if (!sessionCookie) {
+    if (!sessionCookie || sessionCookie.value !== adminPassword) {
       return new NextResponse('Unauthorized', { status: 401 });
     }
   }

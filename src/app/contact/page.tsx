@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Send, Loader2, Sparkles, MapPin, Mail, Phone } from "lucide-react";
+import { Send, Sparkles, MapPin, Mail, Phone } from "lucide-react";
+import { TrishulLoader } from '@/components/TrishulLoader';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -227,7 +228,7 @@ export default function ContactPage() {
               >
                 {isSubmitting ? (
                   <>
-                    <Loader2 className="w-5 h-5 animate-spin" />
+                    <TrishulLoader size={20} className="mr-2" />
                     Sending...
                   </>
                 ) : (

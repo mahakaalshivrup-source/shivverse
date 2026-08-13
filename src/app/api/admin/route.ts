@@ -3,24 +3,26 @@ import { uploadToR2, getMetadata, saveMetadata, deleteFromR2 } from '@/lib/r2';
 
 export const dynamic = 'force-dynamic';
 
+const CACHE_CONTROL_IMMUTABLE = 'public, max-age=31536000, immutable';
+
 export async function GET() {
   const metadata = await getMetadata();
   const cdn = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || 'https://media.shivshiv.in';
   
   if (metadata.stories) {
     for (let s of metadata.stories) {
-      if (s.thumbnail_filename) s.image_url = `${cdn}/${encodeURI(s.thumbnail_filename)}`;
+      if (s.thumbnail_filename) s.image_url = `${cdn}/${s.thumbnail_filename}`;
     }
   }
   if (metadata.mantras) {
     for (let m of metadata.mantras) {
-      if (m.cover_filename) m.image_url = `${cdn}/${encodeURI(m.cover_filename)}`;
+      if (m.cover_filename) m.image_url = `${cdn}/${m.cover_filename}`;
     }
   }
   if (metadata.scriptures) {
     for (let b of metadata.scriptures) {
-      if (b.thumbnail_filename) b.image_url = `${cdn}/${encodeURI(b.thumbnail_filename)}`;
-      if (b.pdf_filename) b.pdfUrl = `${cdn}/${encodeURI(b.pdf_filename)}`;
+      if (b.thumbnail_filename) b.image_url = `${cdn}/${b.thumbnail_filename}`;
+      if (b.pdf_filename) b.pdfUrl = `${cdn}/${b.pdf_filename}`;
     }
   }
 
@@ -46,7 +48,7 @@ export async function POST(request: Request) {
       const thumbnailFile = formData.get('thumbnail') as File;
       const thumbnail_filename = `stories/${timestamp}-${thumbnailFile.name}`;
       
-      await uploadToR2(Buffer.from(await thumbnailFile.arrayBuffer()), thumbnail_filename, thumbnailFile.type);
+      await uploadToR2(Buffer.from(await thumbnailFile.arrayBuffer()), thumbnail_filename, thumbnailFile.type, CACHE_CONTROL_IMMUTABLE);
       
       metadata.stories.push({
         id: newId,
@@ -66,11 +68,11 @@ export async function POST(request: Request) {
       
       const audioFile = formData.get('audio') as File;
       const audio_filename = `audio/${timestamp}-${audioFile.name}`;
-      await uploadToR2(Buffer.from(await audioFile.arrayBuffer()), audio_filename, audioFile.type);
+      await uploadToR2(Buffer.from(await audioFile.arrayBuffer()), audio_filename, audioFile.type, CACHE_CONTROL_IMMUTABLE);
       
       const coverFile = formData.get('cover') as File;
       const cover_filename = `mantras/${timestamp}-${coverFile.name}`;
-      await uploadToR2(Buffer.from(await coverFile.arrayBuffer()), cover_filename, coverFile.type);
+      await uploadToR2(Buffer.from(await coverFile.arrayBuffer()), cover_filename, coverFile.type, CACHE_CONTROL_IMMUTABLE);
       
       metadata.mantras.push({
         id: newId,
@@ -88,11 +90,11 @@ export async function POST(request: Request) {
       
       const pdfFile = formData.get('pdf') as File;
       const pdf_filename = `books/${timestamp}-${pdfFile.name}`;
-      await uploadToR2(Buffer.from(await pdfFile.arrayBuffer()), pdf_filename, pdfFile.type);
+      await uploadToR2(Buffer.from(await pdfFile.arrayBuffer()), pdf_filename, pdfFile.type, CACHE_CONTROL_IMMUTABLE);
       
       const thumbnailFile = formData.get('thumbnail') as File;
       const thumbnail_filename = `books/${timestamp}-thumb.webp`;
-      await uploadToR2(Buffer.from(await thumbnailFile.arrayBuffer()), thumbnail_filename, thumbnailFile.type);
+      await uploadToR2(Buffer.from(await thumbnailFile.arrayBuffer()), thumbnail_filename, thumbnailFile.type, CACHE_CONTROL_IMMUTABLE);
       
       metadata.scriptures.push({
         id: newId,
@@ -163,7 +165,7 @@ export async function PUT(request: Request) {
       if (thumbnailFile && thumbnailFile.size > 0) {
         if (item.thumbnail_filename) await deleteFromR2(item.thumbnail_filename).catch(() => {});
         const thumbnail_filename = `stories/${Date.now()}-${thumbnailFile.name}`;
-        await uploadToR2(Buffer.from(await thumbnailFile.arrayBuffer()), thumbnail_filename, thumbnailFile.type);
+        await uploadToR2(Buffer.from(await thumbnailFile.arrayBuffer()), thumbnail_filename, thumbnailFile.type, CACHE_CONTROL_IMMUTABLE);
         item.thumbnail_filename = thumbnail_filename;
       }
       item.updated_at = Date.now();
@@ -181,7 +183,7 @@ export async function PUT(request: Request) {
       if (audioFile && audioFile.size > 0) {
         if (item.audio_filename) await deleteFromR2(item.audio_filename).catch(() => {});
         const audio_filename = `audio/${Date.now()}-${audioFile.name}`;
-        await uploadToR2(Buffer.from(await audioFile.arrayBuffer()), audio_filename, audioFile.type);
+        await uploadToR2(Buffer.from(await audioFile.arrayBuffer()), audio_filename, audioFile.type, CACHE_CONTROL_IMMUTABLE);
         item.audio_filename = audio_filename;
       }
       
@@ -189,7 +191,7 @@ export async function PUT(request: Request) {
       if (coverFile && coverFile.size > 0) {
         if (item.cover_filename) await deleteFromR2(item.cover_filename).catch(() => {});
         const cover_filename = `mantras/${Date.now()}-${coverFile.name}`;
-        await uploadToR2(Buffer.from(await coverFile.arrayBuffer()), cover_filename, coverFile.type);
+        await uploadToR2(Buffer.from(await coverFile.arrayBuffer()), cover_filename, coverFile.type, CACHE_CONTROL_IMMUTABLE);
         item.cover_filename = cover_filename;
       }
       item.updated_at = Date.now();
@@ -205,14 +207,14 @@ export async function PUT(request: Request) {
       if (pdfFile && pdfFile.size > 0) {
         if (item.pdf_filename) await deleteFromR2(item.pdf_filename).catch(() => {});
         const pdf_filename = `books/${Date.now()}-${pdfFile.name}`;
-        await uploadToR2(Buffer.from(await pdfFile.arrayBuffer()), pdf_filename, pdfFile.type);
+        await uploadToR2(Buffer.from(await pdfFile.arrayBuffer()), pdf_filename, pdfFile.type, CACHE_CONTROL_IMMUTABLE);
         item.pdf_filename = pdf_filename;
         
         const thumbnailFile = formData.get('thumbnail') as File | null;
         if (thumbnailFile && thumbnailFile.size > 0) {
           if (item.thumbnail_filename) await deleteFromR2(item.thumbnail_filename).catch(() => {});
           const thumbnail_filename = `books/${Date.now()}-thumb.webp`;
-          await uploadToR2(Buffer.from(await thumbnailFile.arrayBuffer()), thumbnail_filename, thumbnailFile.type);
+          await uploadToR2(Buffer.from(await thumbnailFile.arrayBuffer()), thumbnail_filename, thumbnailFile.type, CACHE_CONTROL_IMMUTABLE);
           item.thumbnail_filename = thumbnail_filename;
         }
       }

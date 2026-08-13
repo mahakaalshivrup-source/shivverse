@@ -63,12 +63,13 @@ export async function saveMetadata(data: Metadata) {
   metadataCache = { data, timestamp: Date.now() };
 }
 
-export async function uploadToR2(fileBuffer: Buffer | Uint8Array, fileName: string, contentType: string) {
+export async function uploadToR2(fileBuffer: Buffer | Uint8Array, fileName: string, contentType: string, cacheControl?: string) {
   const command = new PutObjectCommand({
     Bucket: R2_BUCKET_NAME,
     Key: fileName,
     Body: fileBuffer,
     ContentType: contentType,
+    CacheControl: cacheControl,
   });
   
   await r2Client.send(command);

@@ -2,19 +2,22 @@
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
-import { pdfjs, Document, Page as PdfPage } from 'react-pdf';
+import dynamic from 'next/dynamic';
 import HTMLFlipBook from 'react-pageflip';
-import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, RotateCcw, Loader2 } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react';
+import { TrishulLoader } from '@/components/TrishulLoader';
 
-// Configure react-pdf worker via CDN for client-side only
-if (typeof window !== 'undefined') {
-  pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
-}
+const Document = dynamic(() => import('react-pdf').then(mod => {
+  mod.pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${mod.pdfjs.version}/build/pdf.worker.min.mjs`;
+  return mod.Document;
+}), { ssr: false });
+
+const PdfPage = dynamic(() => import('react-pdf').then(mod => mod.Page), { ssr: false });
 
 const pdfOptions = {
-  cMapUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/cmaps/`,
+  cMapUrl: `https://unpkg.com/pdfjs-dist@5.4.296/cmaps/`,
   cMapPacked: true,
-  standardFontDataUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/standard_fonts/`,
+  standardFontDataUrl: `https://unpkg.com/pdfjs-dist@5.4.296/standard_fonts/`,
   withCredentials: false,
 };
 
@@ -82,7 +85,7 @@ const FlipPage = React.forwardRef<
               renderTextLayer={false}
             />
           ) : (
-            <Loader2 className="animate-spin text-black/10" size={32} />
+            <TrishulLoader className="text-black/10" size={32} />
           )}
         </div>
       </div>
@@ -107,9 +110,10 @@ FlipPage.displayName = 'FlipPage';
 function BookCoverThumbnail({ pdfUrl }: { pdfUrl: string }) {
   return (
     <Document
-      file={pdfUrl}
+      file={encodeURI(pdfUrl)}
       options={pdfOptions}
-      loading={<div className="w-full h-full bg-white/5 animate-pulse rounded" />}
+      error={(err) => <div className="text-red-500 text-xs text-center p-2 h-full flex items-center justify-center break-all">{err?.message || "Failed"}</div>}
+      loading={<div className="w-full h-full flex items-center justify-center bg-white/5 rounded"><TrishulLoader size={32} /></div>}
       className="w-full h-full [&>div]:w-full [&>div]:h-full [&_canvas]:!w-full [&_canvas]:!h-full [&_canvas]:object-cover"
     >
       <PdfPage
@@ -297,7 +301,7 @@ export default function SacredTextsSection() {
                         animate={{ opacity: 1 }}
                         className="absolute inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-10"
                       >
-                        <Loader2 size={28} className="text-white/70 animate-spin" />
+                        <TrishulLoader size={28} className="text-white/70" />
                       </motion.div>
                     )}
                   </motion.div>
@@ -326,8 +330,9 @@ export default function SacredTextsSection() {
         {loadingBookId && pendingBookRef.current && (
           <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden', opacity: 0 }}>
             <Document
-              file={pendingBookRef.current.pdfUrl}
+              file={encodeURI(pendingBookRef.current.pdfUrl)}
               options={pdfOptions}
+              error={(err) => console.error("Preload error:", err)}
               onLoadSuccess={onPreloadSuccess}
               loading={null}
             >
@@ -398,9 +403,10 @@ export default function SacredTextsSection() {
                 }}
               >
                 <Document
-                  file={selectedBook.pdfUrl}
+                  file={encodeURI(selectedBook.pdfUrl)}
                   options={pdfOptions}
-                  loading={<></>}
+                  error={(err) => <div className="text-red-500 text-sm text-center p-4 break-all bg-black/50 rounded-xl">{err?.message || "Failed"}</div>}
+                  loading={<div className="w-full h-full flex items-center justify-center min-h-[500px]"><TrishulLoader size={64} /></div>}
                 >
                   {numPages > 0 && (
                     <motion.div

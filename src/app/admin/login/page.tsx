@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Loader2, Lock } from 'lucide-react';
+import { Lock } from 'lucide-react';
+import { TrishulLoader } from '@/components/TrishulLoader';
 
 export default function AdminLogin() {
   const [username, setUsername] = useState('');
@@ -88,7 +89,7 @@ export default function AdminLogin() {
             disabled={loading}
             className="w-full bg-blue-600 hover:bg-blue-500 disabled:opacity-70 text-white font-bold py-4 rounded-full transition-all flex justify-center items-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.2)]"
           >
-            {loading ? <Loader2 className="animate-spin" /> : 'Sign In'}
+            {loading ? <TrishulLoader size={24} /> : 'Sign In'}
           </button>
         </form>
       </div>
