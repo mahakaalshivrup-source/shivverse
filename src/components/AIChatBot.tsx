@@ -143,6 +143,7 @@ export default function AIChatBot() {
                   alt="Ask Divine Guide"
                   fill
                   sizes="64px"
+                  quality={60}
                   className="object-cover"
                 />
               </div>
@@ -172,6 +173,7 @@ export default function AIChatBot() {
                     alt="Divine Guide"
                     fill
                     sizes="36px"
+                    quality={60}
                     className="object-cover"
                   />
                 </div>
@@ -206,6 +208,7 @@ export default function AIChatBot() {
                       alt="Welcome"
                       fill
                       sizes="64px"
+                      quality={60}
                       className="object-cover"
                     />
                   </div>

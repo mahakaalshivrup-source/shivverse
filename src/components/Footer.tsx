@@ -182,6 +182,7 @@ export default function Footer() {
                     alt="ShivaVerse Logo"
                     fill
                     sizes="96px"
+                    quality={60}
                     className="object-cover"
                   />
                 </div>
