@@ -5,21 +5,22 @@ export const dynamic = 'force-dynamic';
 
 export async function GET() {
   const metadata = await getMetadata();
+  const cdn = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || 'https://media.shivshiv.in';
   
   if (metadata.stories) {
     for (let s of metadata.stories) {
-      if (s.thumbnail_filename) s.image_url = `/api/thumbnail/${s.thumbnail_filename}`;
+      if (s.thumbnail_filename) s.image_url = `${cdn}/${s.thumbnail_filename}`;
     }
   }
   if (metadata.mantras) {
     for (let m of metadata.mantras) {
-      if (m.cover_filename) m.image_url = `/api/thumbnail/${m.cover_filename}`;
+      if (m.cover_filename) m.image_url = `${cdn}/${m.cover_filename}`;
     }
   }
   if (metadata.scriptures) {
     for (let b of metadata.scriptures) {
-      if (b.thumbnail_filename) b.image_url = `/api/thumbnail/${b.thumbnail_filename}`;
-      if (b.pdf_filename) b.pdfUrl = `/api/thumbnail/${b.pdf_filename}`;
+      if (b.thumbnail_filename) b.image_url = `${cdn}/${b.thumbnail_filename}`;
+      if (b.pdf_filename) b.pdfUrl = `${cdn}/${b.pdf_filename}`;
     }
   }
 
