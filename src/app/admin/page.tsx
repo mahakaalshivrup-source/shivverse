@@ -282,6 +282,15 @@ export default function AdminPage() {
         </div>
 
         <div className="p-6 md:p-10 relative">
+          {submitSuccess && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-md">
+               <div className="bg-white/10 border border-white/20 p-8 rounded-3xl flex flex-col items-center shadow-2xl animate-in zoom-in-95 duration-300">
+                 <CheckCircle className="text-green-500 w-20 h-20 mb-4 animate-bounce" />
+                 <h3 className="text-3xl font-bold text-white mb-2">{submitSuccess}</h3>
+                 <p className="text-white/70">The system has been updated successfully.</p>
+               </div>
+            </div>
+          )}
           {deleteSuccess && (
             <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-green-500/90 text-white px-6 py-3 rounded-full font-bold shadow-lg animate-bounce z-50 flex items-center gap-2">
               <CheckCircle size={20} />
@@ -417,7 +426,7 @@ export default function AdminPage() {
                                 <CloudflareImage src={book.image_url} alt={book.title} className="w-full aspect-[3/4] rounded-xl shadow-md" />
                             ) : book.pdfUrl ? (
                                 <div className="w-full aspect-[3/4] rounded-xl overflow-hidden shadow-md relative bg-white flex items-center justify-center">
-                                    <div className="w-full h-full pointer-events-none opacity-90 overflow-hidden flex justify-center items-center">
+                                    <div className="w-full h-full pointer-events-none opacity-90 overflow-hidden flex justify-center items-center [&_canvas]:w-full [&_canvas]:h-full [&_canvas]:object-cover">
                                       <Document file={encodeURI(book.pdfUrl)} options={{ withCredentials: false }} error={<div className="text-red-500 text-[10px] text-center p-1 break-all">Failed</div>} onLoadError={(err) => console.error("Admin PDF Load Error:", err)} loading={<TrishulLoader size={32} />}>
                                           <PdfPage pageNumber={1} width={250} renderTextLayer={false} renderAnnotationLayer={false} />
                                       </Document>

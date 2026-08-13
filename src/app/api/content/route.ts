@@ -58,7 +58,11 @@ export async function GET() {
     });
 
     return NextResponse.json(
-      { stories, mantras, scriptures },
+      { 
+        stories: stories.reverse(), 
+        mantras: mantras.reverse(), 
+        scriptures: scriptures.reverse() 
+      },
       {
         headers: {
           'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',

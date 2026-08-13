@@ -57,6 +57,7 @@ export async function POST(request: Request) {
         subheading,
         content_en,
         content_hi,
+        thumbnail_filename,
         created_at: new Date().toISOString(),
         updated_at: timestamp
       });
@@ -79,6 +80,7 @@ export async function POST(request: Request) {
         title,
         subtitle,
         audio_filename,
+        cover_filename,
         caption_en,
         caption_hi,
         created_at: new Date().toISOString(),
