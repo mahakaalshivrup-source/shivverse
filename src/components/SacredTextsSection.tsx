@@ -112,7 +112,8 @@ function BookCoverThumbnail({ pdfUrl }: { pdfUrl: string }) {
     <Document
       file={encodeURI(pdfUrl)}
       options={pdfOptions}
-      error={(err) => <div className="text-red-500 text-xs text-center p-2 h-full flex items-center justify-center break-all">{err?.message || "Failed"}</div>}
+      error={<div className="text-red-500 text-xs text-center p-2 h-full flex items-center justify-center break-all">Failed to load PDF</div>}
+      onLoadError={(err) => console.error("PDF Load Error:", err)}
       loading={<div className="w-full h-full flex items-center justify-center bg-white/5 rounded"><TrishulLoader size={32} /></div>}
       className="w-full h-full [&>div]:w-full [&>div]:h-full [&_canvas]:!w-full [&_canvas]:!h-full [&_canvas]:object-cover"
     >
@@ -332,7 +333,7 @@ export default function SacredTextsSection() {
             <Document
               file={encodeURI(pendingBookRef.current.pdfUrl)}
               options={pdfOptions}
-              error={(err) => console.error("Preload error:", err)}
+              onLoadError={(err) => console.error("Preload error:", err)}
               onLoadSuccess={onPreloadSuccess}
               loading={null}
             >
@@ -405,7 +406,8 @@ export default function SacredTextsSection() {
                 <Document
                   file={encodeURI(selectedBook.pdfUrl)}
                   options={pdfOptions}
-                  error={(err) => <div className="text-red-500 text-sm text-center p-4 break-all bg-black/50 rounded-xl">{err?.message || "Failed"}</div>}
+                  error={<div className="text-red-500 text-sm text-center p-4 break-all bg-black/50 rounded-xl">Failed to load PDF</div>}
+                  onLoadError={(err) => console.error("PDF Load Error:", err)}
                   loading={<div className="w-full h-full flex items-center justify-center min-h-[500px]"><TrishulLoader size={64} /></div>}
                 >
                   {numPages > 0 && (

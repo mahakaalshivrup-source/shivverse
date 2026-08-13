@@ -418,7 +418,7 @@ export default function AdminPage() {
                             ) : book.pdfUrl ? (
                                 <div className="w-full aspect-[3/4] rounded-xl overflow-hidden shadow-md relative bg-white flex items-center justify-center">
                                     <div className="w-full h-full pointer-events-none opacity-90 overflow-hidden flex justify-center items-center">
-                                      <Document file={encodeURI(book.pdfUrl)} options={{ withCredentials: false }} error={(err) => <div className="text-red-500 text-[10px] text-center p-1 break-all">{err?.message || "Failed"}</div>} loading={<TrishulLoader size={32} />}>
+                                      <Document file={encodeURI(book.pdfUrl)} options={{ withCredentials: false }} error={<div className="text-red-500 text-[10px] text-center p-1 break-all">Failed</div>} onLoadError={(err) => console.error("Admin PDF Load Error:", err)} loading={<TrishulLoader size={32} />}>
                                           <PdfPage pageNumber={1} width={250} renderTextLayer={false} renderAnnotationLayer={false} />
                                       </Document>
                                     </div>
