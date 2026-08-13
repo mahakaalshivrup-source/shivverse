@@ -12,7 +12,7 @@ export async function GET() {
 
     // Transform Stories to match existing interface
     const stories = metadata.stories.map((story: any) => {
-      const imageUrl = `${cdn}/${story.thumbnail_filename}`;
+      const imageUrl = story.thumbnail_filename ? `${cdn}/${encodeURI(story.thumbnail_filename)}` : "";
       return {
         id: story.id,
         title: story.title,
@@ -26,8 +26,8 @@ export async function GET() {
 
     // Transform Mantras to match existing interface
     const mantras = metadata.mantras.map((mantra: any) => {
-      const audioUrl = `${cdn}/${mantra.audio_filename}`;
-      const coverUrl = `${cdn}/${mantra.cover_filename}`;
+      const audioUrl = mantra.audio_filename ? `${cdn}/${encodeURI(mantra.audio_filename)}` : "";
+      const coverUrl = mantra.cover_filename ? `${cdn}/${encodeURI(mantra.cover_filename)}` : "";
       
       let lyrics = [];
       let lyricsEn = [];
@@ -47,8 +47,8 @@ export async function GET() {
 
     // Transform Scriptures to match existing interface
     const scriptures = metadata.scriptures.map((book: any) => {
-      const pdfUrl = `${cdn}/${book.pdf_filename}`;
-      const thumbUrl = book.thumbnail_filename ? `${cdn}/${book.thumbnail_filename}` : "";
+      const pdfUrl = book.pdf_filename ? `${cdn}/${encodeURI(book.pdf_filename)}` : "";
+      const thumbUrl = book.thumbnail_filename ? `${cdn}/${encodeURI(book.thumbnail_filename)}` : "";
       return {
         id: book.id,
         title: book.title,

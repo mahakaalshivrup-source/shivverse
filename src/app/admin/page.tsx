@@ -8,7 +8,7 @@ import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
 const Document = dynamic(() => import('react-pdf').then(mod => {
-  mod.pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${mod.pdfjs.version}/build/pdf.worker.min.mjs`;
+  mod.pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${mod.pdfjs.version}/build/pdf.worker.min.mjs`;
   return mod.Document;
 }), { ssr: false });
 
@@ -416,7 +416,7 @@ export default function AdminPage() {
                             ) : book.pdfUrl ? (
                                 <div className="w-full aspect-[3/4] rounded-xl overflow-hidden shadow-md relative bg-white flex items-center justify-center">
                                     <div className="w-full h-full pointer-events-none opacity-90 overflow-hidden flex justify-center items-center">
-                                      <Document file={book.pdfUrl} loading={<Loader2 className="animate-spin text-black/20" />}>
+                                      <Document file={book.pdfUrl} options={{ withCredentials: false }} loading={<Loader2 className="animate-spin text-black/20" />}>
                                           <PdfPage pageNumber={1} width={250} renderTextLayer={false} renderAnnotationLayer={false} />
                                       </Document>
                                     </div>

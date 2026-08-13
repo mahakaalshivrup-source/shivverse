@@ -6,8 +6,17 @@ import { pdfjs, Document, Page as PdfPage } from 'react-pdf';
 import HTMLFlipBook from 'react-pageflip';
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, RotateCcw, Loader2 } from 'lucide-react';
 
-// Configure react-pdf worker via CDN
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+// Configure react-pdf worker via CDN for client-side only
+if (typeof window !== 'undefined') {
+  pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+}
+
+const pdfOptions = {
+  cMapUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/cmaps/`,
+  cMapPacked: true,
+  standardFontDataUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/standard_fonts/`,
+  withCredentials: false,
+};
 
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
@@ -99,6 +108,7 @@ function BookCoverThumbnail({ pdfUrl }: { pdfUrl: string }) {
   return (
     <Document
       file={pdfUrl}
+      options={pdfOptions}
       loading={<div className="w-full h-full bg-white/5 animate-pulse rounded" />}
       className="w-full h-full [&>div]:w-full [&>div]:h-full [&_canvas]:!w-full [&_canvas]:!h-full [&_canvas]:object-cover"
     >
@@ -317,6 +327,7 @@ export default function SacredTextsSection() {
           <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden', opacity: 0 }}>
             <Document
               file={pendingBookRef.current.pdfUrl}
+              options={pdfOptions}
               onLoadSuccess={onPreloadSuccess}
               loading={null}
             >
@@ -388,6 +399,7 @@ export default function SacredTextsSection() {
               >
                 <Document
                   file={selectedBook.pdfUrl}
+                  options={pdfOptions}
                   loading={<></>}
                 >
                   {numPages > 0 && (

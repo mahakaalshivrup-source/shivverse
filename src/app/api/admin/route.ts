@@ -9,18 +9,18 @@ export async function GET() {
   
   if (metadata.stories) {
     for (let s of metadata.stories) {
-      if (s.thumbnail_filename) s.image_url = `${cdn}/${s.thumbnail_filename}`;
+      if (s.thumbnail_filename) s.image_url = `${cdn}/${encodeURI(s.thumbnail_filename)}`;
     }
   }
   if (metadata.mantras) {
     for (let m of metadata.mantras) {
-      if (m.cover_filename) m.image_url = `${cdn}/${m.cover_filename}`;
+      if (m.cover_filename) m.image_url = `${cdn}/${encodeURI(m.cover_filename)}`;
     }
   }
   if (metadata.scriptures) {
     for (let b of metadata.scriptures) {
-      if (b.thumbnail_filename) b.image_url = `${cdn}/${b.thumbnail_filename}`;
-      if (b.pdf_filename) b.pdfUrl = `${cdn}/${b.pdf_filename}`;
+      if (b.thumbnail_filename) b.image_url = `${cdn}/${encodeURI(b.thumbnail_filename)}`;
+      if (b.pdf_filename) b.pdfUrl = `${cdn}/${encodeURI(b.pdf_filename)}`;
     }
   }
 
