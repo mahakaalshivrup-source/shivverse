@@ -148,6 +148,7 @@ export default function AdminPage() {
     if (!isEdit && !files.thumbnail) return alert("Artwork Cover required");
     setSubmitting(true);
     try {
+      await new Promise(resolve => setTimeout(resolve, 1000));
       const formData = new FormData();
       formData.append('type', 'story');
       if (isEdit) formData.append('id', editId.id.toString());
@@ -175,6 +176,7 @@ export default function AdminPage() {
     if (!isEdit && (!files.audio || !files.cover)) return alert("Audio and Cover required");
     setSubmitting(true);
     try {
+      await new Promise(resolve => setTimeout(resolve, 1000));
       const formData = new FormData();
       formData.append('type', 'mantra');
       if (isEdit) formData.append('id', editId.id.toString());
@@ -210,6 +212,7 @@ export default function AdminPage() {
     if (!isEdit && !files.pdf) return alert("PDF required");
     setSubmitting(true);
     try {
+      await new Promise(resolve => setTimeout(resolve, 1000));
       const formData = new FormData();
       formData.append('type', 'scripture');
       if (isEdit) formData.append('id', editId.id.toString());
@@ -239,7 +242,7 @@ export default function AdminPage() {
   const CustomFileUpload = ({ title, fieldName, file, isEdit, accept }: { title: string, fieldName: string, file: File | null, isEdit: boolean, accept: string }) => (
     <div className="w-full">
       <label className="block text-white/70 mb-2 font-medium">{title} {isEdit && <span className="text-xs text-blue-400 font-normal">- Optional</span>}</label>
-      <label className="flex flex-col items-center justify-center w-full h-32 px-4 transition bg-black/40 border-2 border-white/20 border-dashed rounded-2xl cursor-pointer hover:border-blue-500 hover:bg-blue-500/10 focus:outline-none">
+      <label className="flex flex-col items-center justify-center w-full h-32 px-4 transition-all duration-300 bg-white/5 backdrop-blur-md border border-white/20 border-dashed rounded-2xl cursor-pointer hover:border-blue-500/50 hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] hover:bg-blue-500/5 focus:outline-none">
         <span className="flex flex-col items-center space-y-2">
             <UploadCloud className="w-8 h-8 text-blue-500" />
             <span className="font-medium text-white/80 text-sm">
@@ -310,11 +313,11 @@ export default function AdminPage() {
                     )}
                     <h2 className="text-2xl md:text-3xl font-serif mb-8 text-blue-400">{editId?.type === 'story' ? 'Edit Story' : 'Add New Story'}</h2>
                     <form onSubmit={handleStorySubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <input className="bg-white/5 border border-white/10 rounded-2xl p-4 text-white focus:outline-none focus:border-blue-500 transition placeholder:text-white/30" placeholder="Title" value={storyForm.title} onChange={e => setStoryForm({...storyForm, title: e.target.value})} required />
-                      <input className="bg-white/5 border border-white/10 rounded-2xl p-4 text-white focus:outline-none focus:border-blue-500 transition placeholder:text-white/30" placeholder="Source" value={storyForm.source} onChange={e => setStoryForm({...storyForm, source: e.target.value})} required />
-                      <input className="bg-white/5 border border-white/10 rounded-2xl p-4 text-white focus:outline-none focus:border-blue-500 transition placeholder:text-white/30 md:col-span-2" placeholder="Subheading (Sloka)" value={storyForm.subheading} onChange={e => setStoryForm({...storyForm, subheading: e.target.value})} required />
-                      <textarea className="bg-white/5 border border-white/10 rounded-2xl p-4 text-white h-40 focus:outline-none focus:border-blue-500 transition placeholder:text-white/30 resize-none" placeholder="English Story Text" value={storyForm.content_en} onChange={e => setStoryForm({...storyForm, content_en: e.target.value})} required />
-                      <textarea className="bg-white/5 border border-white/10 rounded-2xl p-4 text-white h-40 focus:outline-none focus:border-blue-500 transition placeholder:text-white/30 resize-none" placeholder="Hindi Story Text" value={storyForm.content_hi} onChange={e => setStoryForm({...storyForm, content_hi: e.target.value})} required />
+                      <input className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 hover:bg-white/10 transition-all shadow-[inset_0_2px_4px_rgba(255,255,255,0.05)] placeholder:text-white/30" placeholder="Title" value={storyForm.title} onChange={e => setStoryForm({...storyForm, title: e.target.value})} required />
+                      <input className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 hover:bg-white/10 transition-all shadow-[inset_0_2px_4px_rgba(255,255,255,0.05)] placeholder:text-white/30" placeholder="Source" value={storyForm.source} onChange={e => setStoryForm({...storyForm, source: e.target.value})} required />
+                      <input className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 hover:bg-white/10 transition-all shadow-[inset_0_2px_4px_rgba(255,255,255,0.05)] placeholder:text-white/30 md:col-span-2" placeholder="Subheading (Sloka)" value={storyForm.subheading} onChange={e => setStoryForm({...storyForm, subheading: e.target.value})} required />
+                      <textarea className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-white h-40 focus:outline-none focus:ring-2 focus:ring-blue-500/50 hover:bg-white/10 transition-all shadow-[inset_0_2px_4px_rgba(255,255,255,0.05)] placeholder:text-white/30 resize-none" placeholder="English Story Text" value={storyForm.content_en} onChange={e => setStoryForm({...storyForm, content_en: e.target.value})} required />
+                      <textarea className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-white h-40 focus:outline-none focus:ring-2 focus:ring-blue-500/50 hover:bg-white/10 transition-all shadow-[inset_0_2px_4px_rgba(255,255,255,0.05)] placeholder:text-white/30 resize-none" placeholder="Hindi Story Text" value={storyForm.content_hi} onChange={e => setStoryForm({...storyForm, content_hi: e.target.value})} required />
                       <div className="md:col-span-2">
                         <CustomFileUpload title="Artwork Cover" fieldName="thumbnail" file={files.thumbnail} isEdit={!!editId} accept="image/*" />
                       </div>
@@ -356,10 +359,10 @@ export default function AdminPage() {
                      )}
                     <h2 className="text-2xl md:text-3xl font-serif mb-8 text-blue-400">{editId?.type === 'mantra' ? 'Edit Mantra' : 'Add New Mantra'}</h2>
                     <form onSubmit={handleMantraSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <input className="bg-white/5 border border-white/10 rounded-2xl p-4 text-white focus:outline-none focus:border-blue-500 transition placeholder:text-white/30" placeholder="Title" value={mantraForm.title} onChange={e => setMantraForm({...mantraForm, title: e.target.value})} required />
-                      <input className="bg-white/5 border border-white/10 rounded-2xl p-4 text-white focus:outline-none focus:border-blue-500 transition placeholder:text-white/30" placeholder="Subtitle" value={mantraForm.subtitle} onChange={e => setMantraForm({...mantraForm, subtitle: e.target.value})} required />
-                      <textarea className="bg-white/5 border border-white/10 rounded-2xl p-4 text-white h-40 focus:outline-none focus:border-blue-500 transition placeholder:text-white/30 resize-none" placeholder="English Lyrics (Line by line)" value={mantraForm.caption_en} onChange={e => setMantraForm({...mantraForm, caption_en: e.target.value})} required />
-                      <textarea className="bg-white/5 border border-white/10 rounded-2xl p-4 text-white h-40 focus:outline-none focus:border-blue-500 transition placeholder:text-white/30 resize-none" placeholder="Hindi Lyrics (Line by line)" value={mantraForm.caption_hi} onChange={e => setMantraForm({...mantraForm, caption_hi: e.target.value})} required />
+                      <input className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 hover:bg-white/10 transition-all shadow-[inset_0_2px_4px_rgba(255,255,255,0.05)] placeholder:text-white/30" placeholder="Title" value={mantraForm.title} onChange={e => setMantraForm({...mantraForm, title: e.target.value})} required />
+                      <input className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 hover:bg-white/10 transition-all shadow-[inset_0_2px_4px_rgba(255,255,255,0.05)] placeholder:text-white/30" placeholder="Subtitle" value={mantraForm.subtitle} onChange={e => setMantraForm({...mantraForm, subtitle: e.target.value})} required />
+                      <textarea className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-white h-40 focus:outline-none focus:ring-2 focus:ring-blue-500/50 hover:bg-white/10 transition-all shadow-[inset_0_2px_4px_rgba(255,255,255,0.05)] placeholder:text-white/30 resize-none" placeholder="English Lyrics (Line by line)" value={mantraForm.caption_en} onChange={e => setMantraForm({...mantraForm, caption_en: e.target.value})} required />
+                      <textarea className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-white h-40 focus:outline-none focus:ring-2 focus:ring-blue-500/50 hover:bg-white/10 transition-all shadow-[inset_0_2px_4px_rgba(255,255,255,0.05)] placeholder:text-white/30 resize-none" placeholder="Hindi Lyrics (Line by line)" value={mantraForm.caption_hi} onChange={e => setMantraForm({...mantraForm, caption_hi: e.target.value})} required />
                       
                       <CustomFileUpload title="Audio File (.mp3)" fieldName="audio" file={files.audio} isEdit={!!editId} accept="audio/*" />
                       <CustomFileUpload title="Artwork Cover" fieldName="cover" file={files.cover} isEdit={!!editId} accept="image/*" />
@@ -405,7 +408,7 @@ export default function AdminPage() {
                      )}
                     <h2 className="text-2xl md:text-3xl font-serif mb-8 text-blue-400">{editId?.type === 'scripture' ? 'Edit Scripture' : 'Add New Scripture PDF'}</h2>
                     <form onSubmit={handleScriptureSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <input className="bg-white/5 border border-white/10 rounded-2xl p-4 text-white focus:outline-none focus:border-blue-500 transition placeholder:text-white/30 md:col-span-2" placeholder="Book Title" value={scriptureForm.title} onChange={e => setScriptureForm({...scriptureForm, title: e.target.value})} required />
+                      <input className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 hover:bg-white/10 transition-all shadow-[inset_0_2px_4px_rgba(255,255,255,0.05)] placeholder:text-white/30 md:col-span-2" placeholder="Book Title" value={scriptureForm.title} onChange={e => setScriptureForm({...scriptureForm, title: e.target.value})} required />
                       <div className="md:col-span-2">
                         <CustomFileUpload title="PDF File Upload" fieldName="pdf" file={files.pdf} isEdit={!!editId} accept="application/pdf" />
                         <p className="text-xs text-white/40 mt-1 text-center">Artwork Cover will be automatically extracted from Page 1.</p>

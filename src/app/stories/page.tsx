@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronDown } from "lucide-react";
+import { TrishulLoader } from "@/components/TrishulLoader";
 
 // ═══════════════════════════════════════════════════
 // Gradient palettes for fallback banners (per card)
@@ -141,8 +142,9 @@ export default function StoriesPage() {
 
       {/* Grid Layout for Stories */}
       {loading ? (
-        <div className="flex justify-center py-20">
-          <p className="text-white/50 text-xl font-serif">Loading stories from cloud...</p>
+        <div className="flex flex-col items-center justify-center py-32 gap-6">
+          <TrishulLoader size={64} />
+          <p className="text-white/60 text-xl font-serif tracking-widest animate-pulse">Loading stories from cloud...</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
