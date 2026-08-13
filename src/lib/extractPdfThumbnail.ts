@@ -1,9 +1,8 @@
-import * as pdfjsLib from 'pdfjs-dist';
-
-// We need to set the workerSrc to the same version as pdfjs-dist
-pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
-
 export async function extractPdfThumbnail(file: File): Promise<{ pdfFile: File, thumbnailBlob: Blob }> {
+  // Dynamically import to prevent SSR build errors
+  const pdfjsLib = await import('pdfjs-dist');
+  pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
+
   return new Promise((resolve, reject) => {
     const fileReader = new FileReader();
 
@@ -11,7 +10,7 @@ export async function extractPdfThumbnail(file: File): Promise<{ pdfFile: File, 
       const typedarray = new Uint8Array(this.result as ArrayBuffer);
 
       try {
-        const loadingTask = pdfjsLib.getDocument(typedarray);
+        const loadingTask = pdfjsLib.getDocument({ data: typedarray });
         const pdf = await loadingTask.promise;
         
         // Fetch the first page
@@ -30,7 +29,7 @@ export async function extractPdfThumbnail(file: File): Promise<{ pdfFile: File, 
         canvas.height = viewport.height;
         canvas.width = viewport.width;
 
-        const renderContext = {
+        const renderContext: any = {
           canvasContext: context,
           viewport: viewport
         };

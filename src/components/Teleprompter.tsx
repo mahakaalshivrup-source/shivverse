@@ -275,7 +275,7 @@ export default function Teleprompter({
 
         {/* Lyrics */}
         <div className="relative z-10 px-4 md:px-8">
-          {currentLyrics.map((line, i) => (
+          {currentLyrics.map((line: string, i: number) => (
             <p
               key={`${language}-${i}`}
               className={`text-center transition-colors duration-500 select-none ${

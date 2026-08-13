@@ -68,7 +68,7 @@ export default function AudioProvider({ children }: { children: ReactNode }) {
 
       // Let the effect handle loading & playing once src updates
       if (audioRef.current) {
-        audioRef.current.src = track.audioSrc;
+        audioRef.current.src = track.audioSrc || track.audio || '';
         audioRef.current.load();
         audioRef.current
           .play()
