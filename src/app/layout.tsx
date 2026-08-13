@@ -30,6 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable} dark`}>
+      <head>
+        <link rel="preconnect" href="https://media.shivshiv.in" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://media.shivshiv.in" />
+      </head>
       <body className="antialiased bg-black text-slate-200">
         <AudioProvider>
           <Navbar />
