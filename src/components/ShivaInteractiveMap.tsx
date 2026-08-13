@@ -56,6 +56,7 @@ export default function ShivaInteractiveMap() {
             width={1200}
             height={1200}
             className="w-full h-auto object-contain"
+            sizes="(max-width: 768px) 100vw, 896px"
             style={{ maskImage: "radial-gradient(ellipse at center, black 70%, transparent 100%)", WebkitMaskImage: "radial-gradient(ellipse at center, black 70%, transparent 100%)" }}
             priority
           />

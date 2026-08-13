@@ -142,6 +142,7 @@ export default function AIChatBot() {
                   src="/logos/shivalogo.png"
                   alt="Ask Divine Guide"
                   fill
+                  sizes="64px"
                   className="object-cover"
                 />
               </div>
@@ -170,6 +171,7 @@ export default function AIChatBot() {
                     src="/logos/shivalogo.png"
                     alt="Divine Guide"
                     fill
+                    sizes="36px"
                     className="object-cover"
                   />
                 </div>
@@ -203,6 +205,7 @@ export default function AIChatBot() {
                       src="/logos/shivalogo.png"
                       alt="Welcome"
                       fill
+                      sizes="64px"
                       className="object-cover"
                     />
                   </div>

@@ -181,6 +181,7 @@ export default function Footer() {
                     src="/logos/shivalogo.png"
                     alt="ShivaVerse Logo"
                     fill
+                    sizes="96px"
                     className="object-cover"
                   />
                 </div>

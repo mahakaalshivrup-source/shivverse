@@ -1,9 +1,8 @@
 'use client';
 import React, { useState } from 'react';
-import Image from 'next/image';
 import { TrishulLoader } from './TrishulLoader';
 
-export function CloudflareImage({ src, alt, className, priority = false }: { src: string, alt: string, className?: string, priority?: boolean }) {
+export function CloudflareImage({ src, alt, className }: { src: string, alt: string, className?: string }) {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
@@ -13,13 +12,10 @@ export function CloudflareImage({ src, alt, className, priority = false }: { src
           <TrishulLoader size={32} />
         </div>
       )}
-      <Image
+      <img
         src={src}
         alt={alt}
-        fill
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        priority={priority}
-        className={`object-cover transition-opacity duration-300 ${isLoading ? 'opacity-0' : 'opacity-100'}`}
+        className="w-full h-full object-cover"
         onLoad={() => setIsLoading(false)}
         onError={() => setIsLoading(false)}
       />
