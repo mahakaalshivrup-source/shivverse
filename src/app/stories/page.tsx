@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronDown } from "lucide-react";
 
@@ -33,18 +33,7 @@ const gradients = [
 // ═══════════════════════════════════════════════════
 // Complete Stories Data from CMS
 // ═══════════════════════════════════════════════════
-import storiesDataRaw from "@/data/stories.json";
-
-// Type assertion to ensure TypeScript knows the shape of our imported JSON
-const storiesData = [...storiesDataRaw].reverse() as Array<{
-  id: number;
-  title: string;
-  source: string;
-  sloka: string;
-  english: string;
-  hindi: string;
-  image: string;
-}>;
+// Data is now fetched dynamically from /api/content
 
 // ═══════════════════════════════════════════════════
 // StoryCard sub-component with fallback banner
@@ -54,7 +43,7 @@ function StoryCard({
   index,
   onClick,
 }: {
-  story: (typeof storiesData)[0];
+  story: any;
   index: number;
   onClick: () => void;
 }) {
@@ -110,11 +99,24 @@ function StoryCard({
 // Main Page Component
 // ═══════════════════════════════════════════════════
 export default function StoriesPage() {
-  const [selectedStory, setSelectedStory] = useState<
-    (typeof storiesData)[0] | null
-  >(null);
+  const [storiesData, setStoriesData] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [selectedStory, setSelectedStory] = useState<any | null>(null);
   const [language, setLanguage] = useState<"english" | "hindi">("english");
   const [visibleCount, setVisibleCount] = useState(6);
+
+  useEffect(() => {
+    fetch('/api/content')
+      .then(res => res.json())
+      .then(data => {
+        setStoriesData(data.stories?.reverse() || []);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error(err);
+        setLoading(false);
+      });
+  }, []);
 
   const visibleStories = storiesData.slice(0, visibleCount);
   const hasMore = visibleCount < storiesData.length;
@@ -138,16 +140,22 @@ export default function StoriesPage() {
       </motion.div>
 
       {/* Grid Layout for Stories */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {visibleStories.map((story, index) => (
-          <StoryCard
-            key={story.id}
-            story={story}
-            index={index}
-            onClick={() => setSelectedStory(story)}
-          />
-        ))}
-      </div>
+      {loading ? (
+        <div className="flex justify-center py-20">
+          <p className="text-white/50 text-xl font-serif">Loading stories from cloud...</p>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {visibleStories.map((story, index) => (
+            <StoryCard
+              key={story.id}
+              story={story}
+              index={index}
+              onClick={() => setSelectedStory(story)}
+            />
+          ))}
+        </div>
+      )}
 
       {/* Load More Button */}
       {hasMore && (

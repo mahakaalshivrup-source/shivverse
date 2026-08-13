@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { Play } from "lucide-react";
 import Image from "next/image";
 import { useAudio } from "@/context/AudioProvider";
-import mantrasData from "@/data/mantrasData";
 import type { Mantra } from "@/data/mantrasData";
 
 // ═══════════════════════════════════════════════════
@@ -147,17 +146,20 @@ export default function MantrasGrid({
   const [mantras, setMantras] = useState<Mantra[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Simulated Database Fetch
   useEffect(() => {
     let isMounted = true;
 
     const fetchMantras = async () => {
-      // In a real database fetch, this would be: const res = await fetch('/api/mantras');
-      await new Promise(resolve => setTimeout(resolve, 1500)); 
-      
-      if (isMounted) {
-        setMantras(mantrasData);
-        setIsLoading(false);
+      try {
+        const res = await fetch('/api/content');
+        const data = await res.json();
+        if (isMounted && data.mantras) {
+          setMantras(data.mantras);
+        }
+      } catch (err) {
+        console.error(err);
+      } finally {
+        if (isMounted) setIsLoading(false);
       }
     };
 

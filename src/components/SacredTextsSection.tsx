@@ -146,9 +146,9 @@ export default function SacredTextsSection() {
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch('/api/books');
+        const res = await fetch('/api/content');
         const data = await res.json();
-        if (data.books) setBooks(data.books);
+        if (data.scriptures) setBooks(data.scriptures);
       } catch (err) {
         console.error('Failed to fetch books:', err);
       } finally {
