@@ -43,7 +43,7 @@ export default function RootLayout({
       <body className="antialiased bg-black text-slate-200">
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTE-NZRN6R2B"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NZRN6R2B"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
@@ -61,3 +61,4 @@ export default function RootLayout({
     </html>
   );
 }
+
