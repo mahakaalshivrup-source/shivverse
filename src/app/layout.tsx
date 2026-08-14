@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} dark}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable} dark`}>
       <head>
         <Script
           id="google-tag-manager"
