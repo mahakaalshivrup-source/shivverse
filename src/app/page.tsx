@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
-import SymbolismSection from "@/components/SymbolismSection";
+import dynamic from "next/dynamic";
+const SymbolismSection = dynamic(() => import("@/components/SymbolismSection"), { ssr: true });
 
 export default function Home() {
   return (

@@ -39,15 +39,18 @@ export default function HeroSection() {
     <section id="hero" className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/60 z-10" /> {/* Dark Overlay */}
+         
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-60 brightness-[1.7]"
+          preload="metadata"
+          poster="/poster.webp"
+          className="w-full h-full object-cover brightness-[0.4]"
+          style={{ WebkitTransform: "translateZ(0)" }}
         >
-          <source src="/New%20folder/All_thing_is_fine_but_he_look.webm" type="video/webm" />
+          <source src="/New folder/All_thing_is_fine_but_he_look.webm" type="video/webm" />
         </video>
         {/* Seamless blend gradient into the next section */}
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent z-10" />

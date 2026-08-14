@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+const fs = require('fs');
+const content = `import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -30,9 +31,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} dark`}>
+    <html lang="en" className={\\`\\$${inter.variable} \\$${playfair.variable} dark\\`}>
       <head>
-        <link rel="preload" as="image" href="/poster.webp" media="(max-width: 768px)" fetchPriority="high" />
         <Script
           id="google-tag-manager"
           strategy="afterInteractive"
@@ -44,7 +44,7 @@ export default function RootLayout({
       <body className="antialiased bg-black text-slate-200">
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-NZRN6R2B"
+            src="https://www.googletagmanager.com/ns.html?id=GTE-NZRN6R2B"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
@@ -61,5 +61,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+}`;
 
+fs.writeFileSync('src/app/layout.tsx', content, 'utf8');
