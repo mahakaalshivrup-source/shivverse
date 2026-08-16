@@ -209,18 +209,33 @@ export default function Footer() {
                   mahakaalshiv1987@gmail.com
                 </a>
 
-                {/* Address */}
-                <div className="flex items-start gap-3 text-base text-white/80">
-                  <MapPin
-                    size={18}
-                    className="text-white/60 mt-1 shrink-0"
-                  />
+                                {/* Address (Clickable) */}
+                <a
+                  href="https://www.google.com/search?q=Siddheshwar+Mahadev+Temple&stick=H4sIAAAAAAAA_-NgU1I2qDC2tLQwTTNMSkszT0kxNrG0MqgwsTAyMDEySko2TTU0M1jEKhWcmZKSkVqcUZ5YpOCbmJGYklqmEJKaW5CTCgDqL0UYRAAAAA&hl=en&mat=CdqAYXVUE6DyElcBa0lj_32YGgO06Gougd64URCJrAjAEibw-IH5huuDd6J_vA9dqzShQ8lf4f-R0CkAKGMDCSgZiO2pO1i-k3JZVCDj-ZYWJAJE5eENCV5ekRtQYnY6m5k&authuser=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 text-base text-white/80 hover:text-white hover:underline hover:underline-offset-4 decoration-white/50 transition-colors duration-300 group w-fit"
+                >
+                  <MapPin size={18} className="text-white/60 mt-1 shrink-0 group-hover:text-white transition-colors duration-300" />
                   <span className="leading-loose">
                     Siddheshwar Temple, Chakiya Road,
                     <br />
                     Rupaidiha, UP, 271881
                   </span>
-                </div>
+                </a>
+
+                {/* Socials */}
+                <div className="flex items-center gap-6 pt-2">
+                  <a href="https://www.facebook.com/jai.maa.ambe/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-[#1877F2] transition-colors duration-300 hover:scale-110 transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  </a>
+                  <a href="https://www.instagram.com/mahakaalshivrup" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-[#E4405F] transition-colors duration-300 hover:scale-110 transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://www.google.com/search?q=Siddheshwar+Mahadev+Temple&stick=H4sIAAAAAAAA_-NgU1I2qDC2tLQwTTNMSkszT0kxNrG0MqgwsTAyMDEySko2TTU0M1jEKhWcmZKSkVqcUZ5YpOCbmJGYklqmEJKaW5CTCgDqL0UYRAAAAA&hl=en&mat=CdqAYXVUE6DyElcBa0lj_32YGgO06Gougd64URCJrAjAEibw-IH5huuDd6J_vA9dqzShQ8lf4f-R0CkAKGMDCSgZiO2pO1i-k3JZVCDj-ZYWJAJE5eENCV5ekRtQYnY6m5k&authuser=0" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-all duration-300 hover:scale-110 transform flex items-center justify-center grayscale hover:grayscale-0">
+                      <Image src="/logos/google-business.png" alt="Google Business Profile" width={24} height={24} className="object-contain" />
+                    </a>
+                  </div>
               </div>
             </div>
           </div>
@@ -229,8 +244,11 @@ export default function Footer() {
         {/* ═══════════════════════════════════════════════════════════
             COPYRIGHT BAR
             ═══════════════════════════════════════════════════════════ */}
-        <div className="text-xs text-white/50 text-center mt-16 pt-8 border-t border-white/20">
-          © {new Date().getFullYear()} ShivaVerse. All rights reserved.
+        <div className="flex flex-col sm:flex-row justify-between items-center text-xs text-white/50 mt-16 pt-8 border-t border-white/20 gap-4">
+          <div>© {new Date().getFullYear()} ShivaVerse. All rights reserved.</div>
+          <Link href="/sitemap.xml" className="hover:text-white hover:underline transition-colors duration-300">
+            Sitemap
+          </Link>
         </div>
       </div>
     </footer>
