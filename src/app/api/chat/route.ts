@@ -135,8 +135,8 @@ export async function POST(req: NextRequest) {
 
     // 🛡️ TIERS 3, 4: OpenRouter Waterfall
     const openRouterModels = [
-      "google/gemma-4-26b-a4b-it:free",
-      "google/gemma-4-31b-it:free"
+      "openrouter/free",
+      "google/gemma-4-26b-a4b-it:free"
     ];
 
     for (let i = 0; i < openRouterModels.length; i++) {
