@@ -104,7 +104,7 @@ async function callOpenRouter(messages: { role: string; content: string }[]): Pr
       "X-Title": "ShivVerse Divine Guide",
     },
     body: JSON.stringify({
-      model: "openai/gpt-oss-20b:free",
+      model: "nvidia/nemotron-3.5-lightning:free",
       messages: [{ role: "system", content: SYSTEM_PROMPT }, ...messages],
       temperature: 0.7,
       max_tokens: 1024,
