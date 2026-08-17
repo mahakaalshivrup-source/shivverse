@@ -7,7 +7,7 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
 const GEMINI_URL =
-  "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
+  "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent";
 
 
 
@@ -54,7 +54,7 @@ async function callGroq(
       Authorization: `Bearer ${GROQ_API_KEY}`,
     },
     body: JSON.stringify({
-      model: "llama-3.3-70b-versatile",
+      model: "openai/gpt-oss-120b",
       messages: [{ role: "system", content: SYSTEM_PROMPT }, ...messages],
       temperature: 0.7,
       max_tokens: 1024,
