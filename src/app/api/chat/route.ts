@@ -52,7 +52,7 @@ async function callCerebras(messages: { role: string; content: string }[]): Prom
       Authorization: `Bearer ${CEREBRAS_API_KEY}`,
     },
     body: JSON.stringify({
-      model: "llama3.1-8b",
+      model: "gemma-4-31b",
       messages: [{ role: "system", content: SYSTEM_PROMPT }, ...messages],
       temperature: 0.7,
       max_tokens: 1024,
@@ -104,7 +104,7 @@ async function callOpenRouter(messages: { role: string; content: string }[]): Pr
       "X-Title": "ShivVerse Divine Guide",
     },
     body: JSON.stringify({
-      model: "meta-llama/llama-3-8b-instruct:free",
+      model: "google/gemma-4-31b-it:free",
       messages: [{ role: "system", content: SYSTEM_PROMPT }, ...messages],
       temperature: 0.7,
       max_tokens: 1024,
