@@ -3,11 +3,10 @@ import { NextRequest, NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
 
 const GROQ_API_KEY = process.env.GROK_API_KEY;
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const CEREBRAS_API_KEY = process.env.CEREBRAS_API_KEY;
 
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
-const GEMINI_URL =
-  "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent";
+const CEREBRAS_URL = "https://api.cerebras.ai/v1/chat/completions";
 
 
 
@@ -72,32 +71,31 @@ async function callGroq(
 
 
 
-async function callGemini(
+async function callCerebras(
   messages: { role: string; content: string }[]
 ): Promise<string> {
-  // Convert chat messages to Gemini format
-  const contents = messages.map((msg) => ({
-    role: msg.role === "assistant" ? "model" : "user",
-    parts: [{ text: msg.content }],
-  }));
-
-  const res = await fetch(`${GEMINI_URL}?key=${GEMINI_API_KEY}`, {
+  const res = await fetch(CEREBRAS_URL, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${CEREBRAS_API_KEY}`,
+    },
     body: JSON.stringify({
-      systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
-      contents,
-      generationConfig: {
-        temperature: 0.7,
-        maxOutputTokens: 1024,
-      },
+      model: "llama3.1-8b",
+      messages: [{ role: "system", content: SYSTEM_PROMPT }, ...messages],
+      temperature: 0.7,
+      max_tokens: 1024,
     }),
   });
 
   if (!res.ok) {
     const errText = await res.text();
-    throw new Error(`Gemini API ${res.status}: ${errText}`);
+    throw new Error(`Cerebras API ${res.status}: ${errText}`);
   }
+
+  const data = await res.json();
+  return data?.choices?.[0]?.message?.content || "";
+}
 
   const data = await res.json();
   return data?.candidates?.[0]?.content?.parts?.[0]?.text || "";
@@ -106,11 +104,11 @@ async function callGemini(
 
 
 export async function POST(req: NextRequest) {
-  if (!GROQ_API_KEY && !GEMINI_API_KEY) {
+  if (!GROQ_API_KEY && !CEREBRAS_API_KEY) {
     return NextResponse.json(
       {
         error:
-          "No API keys configured. Set GROK_API_KEY or GEMINI_API_KEY in .env.local.",
+          "No API keys configured. Set GROK_API_KEY or CEREBRAS_API_KEY in .env.local.",
       },
       { status: 500 }
     );
