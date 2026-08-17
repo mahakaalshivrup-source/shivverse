@@ -3,12 +3,11 @@ import { NextRequest, NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
 
 // API Keys
-const CEREBRAS_API_KEY = process.env.CEREBRAS_API_KEY;
-const GROQ_API_KEY = process.env.GROK_API_KEY;
+const GROQ_API_KEY_1 = process.env.GROQ_API_KEY_1; // The new key
+const GROQ_API_KEY_2 = process.env.GROK_API_KEY;   // The old key
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
 // URLs
-const CEREBRAS_URL = "https://api.cerebras.ai/v1/chat/completions";
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
 
@@ -43,38 +42,13 @@ const SYSTEM_PROMPT = `You are "Divine Guide", a deeply respectful and profoundl
 - Format with markdown for readability
 - End responses with a gentle spiritual note or blessing when appropriate`;
 
-// 🚀 TIER 1: CEREBRAS
-async function callCerebras(messages: { role: string; content: string }[]): Promise<string> {
-  const res = await fetch(CEREBRAS_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${CEREBRAS_API_KEY}`,
-    },
-    body: JSON.stringify({
-      model: "gemma-4-31b",
-      messages: [{ role: "system", content: SYSTEM_PROMPT }, ...messages],
-      temperature: 0.7,
-      max_tokens: 1024,
-    }),
-  });
-
-  if (!res.ok) {
-    const errText = await res.text();
-    throw new Error(`Cerebras API ${res.status}: ${errText}`);
-  }
-
-  const data = await res.json();
-  return data?.choices?.[0]?.message?.content || "";
-}
-
-// 🚄 TIER 2: GROQ
-async function callGroq(messages: { role: string; content: string }[]): Promise<string> {
+// 🚄 GROQ FETCHER
+async function callGroq(messages: { role: string; content: string }[], key: string): Promise<string> {
   const res = await fetch(GROQ_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${GROQ_API_KEY}`,
+      Authorization: `Bearer ${key}`,
     },
     body: JSON.stringify({
       model: "openai/gpt-oss-120b",
@@ -93,7 +67,7 @@ async function callGroq(messages: { role: string; content: string }[]): Promise<
   return data?.choices?.[0]?.message?.content || "";
 }
 
-// 🛡️ TIERS 3, 4, 5: OPENROUTER
+// 🛡️ OPENROUTER FETCHER
 async function callOpenRouter(messages: { role: string; content: string }[], modelName: string): Promise<string> {
   const res = await fetch(OPENROUTER_URL, {
     method: "POST",
@@ -121,9 +95,9 @@ async function callOpenRouter(messages: { role: string; content: string }[], mod
 }
 
 export async function POST(req: NextRequest) {
-  if (!CEREBRAS_API_KEY && !GROQ_API_KEY && !OPENROUTER_API_KEY) {
+  if (!GROQ_API_KEY_1 && !GROQ_API_KEY_2 && !OPENROUTER_API_KEY) {
     return NextResponse.json(
-      { error: "No API keys configured. Set CEREBRAS_API_KEY, GROK_API_KEY, or OPENROUTER_API_KEY in .env.local." },
+      { error: "No API keys configured. Set GROQ_API_KEY_1, GROK_API_KEY, or OPENROUTER_API_KEY in .env.local." },
       { status: 500 }
     );
   }
@@ -137,31 +111,30 @@ export async function POST(req: NextRequest) {
 
     let reply = "";
 
-    // 🚀 TIER 1: Cerebras
-    if (CEREBRAS_API_KEY) {
+    // 🚀 TIER 1: Groq Account 1
+    if (GROQ_API_KEY_1) {
       try {
-        console.log("[divine-guide] Trying Tier 1: Cerebras...");
-        reply = await callCerebras(messages);
-        console.log("[divine-guide] Tier 1 (Cerebras) succeeded.");
+        console.log("[divine-guide] Trying Tier 1: Groq Account 1...");
+        reply = await callGroq(messages, GROQ_API_KEY_1);
+        console.log("[divine-guide] Tier 1 succeeded.");
       } catch (err) {
-        console.warn("[divine-guide] Cerebras failed. Rerouting to Tier 2 (Groq)...");
+        console.warn("[divine-guide] Groq Account 1 failed. Rerouting to Tier 2...");
       }
     }
 
-    // 🚄 TIER 2: Groq
-    if (!reply && GROQ_API_KEY) {
+    // 🚄 TIER 2: Groq Account 2
+    if (!reply && GROQ_API_KEY_2) {
       try {
-        console.log("[divine-guide] Trying Tier 2: Groq...");
-        reply = await callGroq(messages);
-        console.log("[divine-guide] Tier 2 (Groq) succeeded.");
+        console.log("[divine-guide] Trying Tier 2: Groq Account 2...");
+        reply = await callGroq(messages, GROQ_API_KEY_2);
+        console.log("[divine-guide] Tier 2 succeeded.");
       } catch (err) {
-        console.warn("[divine-guide] Groq failed. Rerouting to OpenRouter Tiers...");
+        console.warn("[divine-guide] Groq Account 2 failed. Rerouting to OpenRouter Tiers...");
       }
     }
 
-    // 🛡️ TIERS 3, 4, 5: OpenRouter Waterfall
+    // 🛡️ TIERS 3, 4: OpenRouter Waterfall
     const openRouterModels = [
-      "nvidia/nemotron-3.5-lightning:free",
       "google/gemma-4-26b-a4b-it:free",
       "google/gemma-4-31b-it:free"
     ];
