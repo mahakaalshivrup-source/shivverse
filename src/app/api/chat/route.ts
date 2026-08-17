@@ -51,7 +51,7 @@ async function callGroq(messages: { role: string; content: string }[], key: stri
       Authorization: `Bearer ${key}`,
     },
     body: JSON.stringify({
-      model: "openai/gpt-oss-120b",
+      model: "openai/gpt-oss-20b",
       messages: [{ role: "system", content: SYSTEM_PROMPT }, ...messages],
       temperature: 0.7,
       max_tokens: 1024,
