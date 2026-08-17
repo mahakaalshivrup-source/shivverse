@@ -93,8 +93,8 @@ async function callGroq(messages: { role: string; content: string }[]): Promise<
   return data?.choices?.[0]?.message?.content || "";
 }
 
-// 🛡️ TIER 3: OPENROUTER
-async function callOpenRouter(messages: { role: string; content: string }[]): Promise<string> {
+// 🛡️ TIERS 3, 4, 5: OPENROUTER
+async function callOpenRouter(messages: { role: string; content: string }[], modelName: string): Promise<string> {
   const res = await fetch(OPENROUTER_URL, {
     method: "POST",
     headers: {
@@ -104,7 +104,7 @@ async function callOpenRouter(messages: { role: string; content: string }[]): Pr
       "X-Title": "ShivVerse Divine Guide",
     },
     body: JSON.stringify({
-      model: "nvidia/nemotron-3.5-lightning:free",
+      model: modelName,
       messages: [{ role: "system", content: SYSTEM_PROMPT }, ...messages],
       temperature: 0.7,
       max_tokens: 1024,
@@ -144,7 +144,7 @@ export async function POST(req: NextRequest) {
         reply = await callCerebras(messages);
         console.log("[divine-guide] Tier 1 (Cerebras) succeeded.");
       } catch (err) {
-        console.warn("[divine-guide] Cerebras failed. Rerouting to Tier 2 (Groq)...", err);
+        console.warn("[divine-guide] Cerebras failed. Rerouting to Tier 2 (Groq)...");
       }
     }
 
@@ -155,18 +155,27 @@ export async function POST(req: NextRequest) {
         reply = await callGroq(messages);
         console.log("[divine-guide] Tier 2 (Groq) succeeded.");
       } catch (err) {
-        console.warn("[divine-guide] Groq failed. Rerouting to Tier 3 (OpenRouter)...", err);
+        console.warn("[divine-guide] Groq failed. Rerouting to OpenRouter Tiers...");
       }
     }
 
-    // 🛡️ TIER 3: OpenRouter
-    if (!reply && OPENROUTER_API_KEY) {
-      try {
-        console.log("[divine-guide] Trying Tier 3: OpenRouter...");
-        reply = await callOpenRouter(messages);
-        console.log("[divine-guide] Tier 3 (OpenRouter) succeeded.");
-      } catch (err) {
-        console.error("[divine-guide] CRITICAL: All AI providers failed.", err);
+    // 🛡️ TIERS 3, 4, 5: OpenRouter Waterfall
+    const openRouterModels = [
+      "nvidia/nemotron-3.5-lightning:free",
+      "google/gemma-4-26b-a4b-it:free",
+      "google/gemma-4-31b-it:free"
+    ];
+
+    for (let i = 0; i < openRouterModels.length; i++) {
+      if (!reply && OPENROUTER_API_KEY) {
+        try {
+          console.log(`[divine-guide] Trying Tier ${i + 3}: OpenRouter (${openRouterModels[i]})...`);
+          reply = await callOpenRouter(messages, openRouterModels[i]);
+          console.log(`[divine-guide] Tier ${i + 3} succeeded.`);
+          break; // Stop looping once we get a successful reply!
+        } catch (err) {
+          console.warn(`[divine-guide] Tier ${i + 3} failed. Trying next...`);
+        }
       }
     }
 
