@@ -14,9 +14,9 @@ const MAP_STYLE: any = {
     "carto-dark": {
       type: "raster",
       tiles: [
-        `https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png?key=${process.env.NEXT_PUBLIC_CARTO_API_KEY}`,
-        `https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png?key=${process.env.NEXT_PUBLIC_CARTO_API_KEY}`,
-        `https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png?key=${process.env.NEXT_PUBLIC_CARTO_API_KEY}`,
+        "https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png?key=cb1_48vn_1_0a73717d20c871e9fc2b8fe7",
+        "https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png?key=cb1_48vn_1_0a73717d20c871e9fc2b8fe7",
+        "https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png?key=cb1_48vn_1_0a73717d20c871e9fc2b8fe7",
       ],
       tileSize: 256,
       maxzoom: 19,
